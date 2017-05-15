@@ -1,0 +1,103 @@
+%%===================================
+% === MAIN-file =====================
+% This template is made by Oda Lauten
+%%===================================
+\documentclass[12pt, a4paper, twoside, openright]{book}
+\usepackage{config/packages}
+\usepackage{config/commands}
+\usepackage{config/input}
+\usepackage{frontmatter/acronyms}
+\begin{document}
+
+%\tracingall  %  will print some additional error messages in some cases.
+
+%%===================================
+% --- Frontmatter
+%%===================================
+\frontmatter
+
+%\begin{comment}
+
+% Title page
+\input{frontmatter/front}
+\input{frontmatter/front2}
+
+% Information
+\input{frontmatter/information}
+
+% Preface [optional]
+\input{frontmatter/preface}
+
+% Dedication [optional]
+%\input{frontmatter/dedication}
+
+% Abstract
+\input{frontmatter/abstract}
+
+% Acknowledgements [optional]
+%\input{frontmatter/acknowledgements}
+
+% Quote [optional]
+%\input{frontmatter/quote}
+
+% Table of Contents
+\renewcommand*\contentsname{Table of Contents}
+\tableofcontents
+
+% List of figures [optional]
+\listoffigures
+
+% List of tables [optional]
+\listoftables
+
+% List of acronyms and abbreviations (symbols, and notation) [optional]
+\printacronyms[heading=chapter, name=List of Acronyms, include-classes = {acro}, sort=true]
+
+%\end{comment}
+
+
+%%===================================
+% --- Mainmatter
+%%===================================
+\mainmatter
+\acresetall % resets acronyms. Each acronym will behave as if it is called for the first time.
+
+% Chapters
+%\input{01_introduction}
+%\input{02_methods}
+%\input{03_experimental-details}
+%\input{04_subAa}
+%\input{04_subBa}
+%\input{04_subCa}
+%\input{04_subAb}
+%\input{04_subBb}
+%\input{04_subCb}
+%\input{04_subBc}
+%\input{04b_comparison}
+%\input{05_conclusions}
+%\input{06_further-work}
+%\input{04x_old-results}
+
+% Appendices
+\appendix
+%\input{a01_acronyms}
+%\input{a02_xps-energies}
+%\chapter{<Name of Appendix>}, e.g. \chapter{a01_calculations}
+
+
+%%===================================
+% --- Backmatter
+%%===================================
+
+% Bibliography
+\clearpage
+\bibliography{backmatter/references}
+
+% Index [optional]
+%\printindex
+
+ 
+%%===================================
+\end{document}
+% === end MAIN ======================
+%%===================================

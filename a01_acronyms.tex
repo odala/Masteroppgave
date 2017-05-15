@@ -1,0 +1,12 @@
+% --- List of acronyms.
+%     To enter an acronym inside the text, use the
+%         \ac{<acronym>}
+%     command. The first time you use an acronym, the full name of the acronym along
+%     with the acronym in brackets will be printed. 
+%     Documentation: acro package
+%
+%\clearpage
+%\chapter{List of Abbreviations and Acronyms}\label{app:acro}
+%\addcontentsline{toc}{chapter}{List of Acronyms}
+\acsetup{extra-style=comma, list-style=tabular}
+\printacronyms[heading=chapter, name=List of Abbreviations and Acronyms, sort=true]

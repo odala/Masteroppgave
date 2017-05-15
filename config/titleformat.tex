@@ -1,0 +1,39 @@
+% ===== Custom chapter, section, etc. ===
+\usepackage{titlesec}
+% \titleformat  {<command>}     : the sectioning command to be redefined: \part, \chapter, \section, \subsection, \subsubsection, \paragraph or \subparagraph.
+%               [<shape>]       : sectioning paragraph shape; possible values are: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame.
+%               {<format>}      : the format to be applied to the title, label, and text; for example \normalfont\Large\bfseries. rm / sf / tt / md / bf / up / it / sl / sc, big / medium / small / tiny, raggedleft / center / raggedright
+%               {<label>}       : specify sectioning label.
+%               {<sep>}         : the horizontal separation between label and title body and it must be a length and not be empty.
+%               {<before-code>} : code preceding the title body.
+%               [<after-code>]  : code following the title body.
+% \titlespacing {<command>}
+%               {<left>}        : increases the left margin.
+%               {<before-sep>}  : the vertical space before the title.
+%               {<after-sep>}   : the separation between title and non-sectioning text.
+% The starred version of this command (\titlespacing*) kills the indentation of the paragraph following the title.
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries\raggedright}{\MakeUppercase{\chaptertitlename}\ \thechapter}{0pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+
+\titleformat{\section}
+{\normalfont\Large\scshape\raggedright}{\thesection}{1em}{}[] % [\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}  %\titlespacing*{\section} {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\titleformat{\subsection}
+{\normalfont\large\scshape\raggedright}{\thesubsection}{1em}{}[]
+\titlespacing{\subsection}{0pt}{3pt}{3pt}   % \titlespacing*{\subsection} {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\titleformat{\subsubsection}
+{\normalfont\normalsize\scshape\raggedright}{\thesubsubsection}{1em}{}
+\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\titleformat{\paragraph}[runin]
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph} {0pt}{3.25ex plus 1ex minus .2ex}{1em}
+
+\titleformat{\subparagraph}[runin]
+{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
+
+\newcommand{\chapterbreak}{\clearpage}                     % lar alle \chapter starte på ny side

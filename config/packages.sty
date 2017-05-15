@@ -1,0 +1,214 @@
+% Dette er pakkene som er lagt til for å brukes med dokumentet.
+
+% ===== Tegnsett ============== 
+\usepackage[norsk,english]{babel}                  % Tilpasning til engelsk
+    \addto{\captionsnorsk}{\renewcommand{\bibname}{Referanser}}
+    \addto{\captionsenglish}{\renewcommand{\bibname}{References}}
+\usepackage[T1]{fontenc}                            % Vise norske tegn.
+%\usepackage[utf8]{inputenc}                         % This defines the font-encoding you prefer to use
+\usepackage{textcomp}                               % To get copyright symbol
+\usepackage{lmodern}                                % for å få skrifttype embedded i pdf
+
+
+% ===== Sideoppsett ===========
+
+\usepackage{geometry}
+\geometry{
+    paper=a4paper,      % Paper size
+    inner=21.75mm,      % Inner margin 31.75
+    outer=31.75mm,      % Outer margin 31.75
+    bindingoffset=10mm, % Binding offset 0
+    top=25mm,           % Top margin 28
+    bottom=35mm,        % Bottom margin 31.75
+    includehead         % include height of header when setting top margin
+    %showframe,         % show how the type block is set on the page
+    %other keys: headheight=4ex, includefoot, total={170mm,257mm}, textwidth, textheight, footsep, footskip
+}
+\usepackage{setspace}                               
+    \onehalfspacing                                 % gir 1.5 linjeavstand
+\setlength{\marginparwidth}{0pt}
+\usepackage{supertabular} 			    	        %for \usepackage{parskip}
+\usepackage{parskip}
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{10pt}
+\usepackage{xltxtra,url} 	                    %other packages for formatting % removed xunicode
+\usepackage{multicol}                               % multicols-environment \begin{multicols}{<number of columns>}[<header text>] ... \end{multicols} If *: text is printed in a column till the end of the page is reached, then the in continues in the next column. Else: evenly balanced
+    \setlength{\columnsep}{1cm}                     % set separetion between columns
+\usepackage{layout}                                 % stick \layout in your document to get a diagram and listing of geometry settings.
+\usepackage{emptypage}  % Get empty page when chapter is moved to odd page.
+
+% ===== Grafikk ===============
+\usepackage{graphicx}       						% For å inkludere figurer.
+\usepackage{float}                                  % For å få figurer ved siden av hverandre
+\usepackage{caption}                                % To get figures extend mulitple pages with one figure number in lof.
+%\usepackage{subfigure}                              % Needed to include subfigures with the command \begin{figure}[ht];\subfigure[<caption>]{\includegraphics... Subfigure er foreldet.
+\usepackage{subcaption}                            % For å kunne lage subfigs           
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% ===== Tables =================
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{$}{>{\global\let\currentrowstyle\relax}}
+\newcolumntype{^}{>{\currentrowstyle}}
+\newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1}%
+  #1\ignorespaces
+}
+
+% ===== Matte =================
+\usepackage{amsmath,amssymb} 						% Ekstra matematikkfunksjoner.
+\usepackage{bm}
+%\usepackage[LGRgreek]{mathastext}                  % setter mattemodus til ikke-kursiv
+\usepackage{mathtools}
+\usepackage{siunitx}							    % Må inkluderes for blant annet å få tilgang til kommandoen \SI{3.25(2)}{\kilo\gram} 
+    \sisetup{separate-uncertainty}                  % 
+    %\sisetup{multi-part-units=single}               % Remove the parantheses around number and uncertainity, but only one unit.
+    \sisetup{exponent-product = \cdot}              % Prikk som multiplikasjonstegn (i steden for kryss).
+    \sisetup{output-product = \cdot} 
+ 	\sisetup{output-decimal-marker  =  {.}}         % Komma som desimalskilletegn for norsk, punktum for engelsk.
+ 	\sisetup{range-phrase=--, range-units=single}   % Set the range phrase to -- when using \SIrange{1}{2}{\metre} gives 1-2 m
+ 	\sisetup{math-micro=\text{µ},text-micro=µ}      % Bug-fix
+ 	\sisetup{math-ohm=\Omega,text-ohm=\Omega}       % Bug-fix
+\usepackage{esint}                                  % To get double circle integral: \oiint
+
+% ===== Physics ===============
+%\usepackage{physics}
+
+% ===== Chemistry =============
+\usepackage[version=4]{mhchem}      % use \ce
+
+% ===== Tabeller og figurer ===
+\usepackage{booktabs}                               % For å få tilgang til finere linjer (til bruk i tabeller og slikt).
+\usepackage[font=small,labelfont=bf]{caption}	    % For justering av figurtekst og tabelltekst.
+\usepackage{float}                                  % Gjør at figurer plasseres akkurat DER de skal ved hjelp av [H] i \begin{figure}[...]
+%% Kommandoene under gjør det enklere for LaTeX å plassere figurer der du ønsker
+    \setcounter{totalnumber}{5}
+    \renewcommand{\textfraction}{0.05}
+    \renewcommand{\topfraction}{0.95}
+    \renewcommand{\bottomfraction}{0.95}
+    \renewcommand{\floatpagefraction}{0.35}
+    \setlength\parindent{0pt}
+%\usepackage[subsection, section]{placeins}                  % puts a \FloatBarrier at every new subsection, prevent floats from being moved over it
+%\usepackage{flafter}                               % ensure that the float never appears before its position in the LaTeX source code.
+\usepackage{tabu}
+
+% ===== Skrifttype ============
+\usepackage{mathrsfs}           % gives \mathscr calligraphic font
+
+
+% ===== Referanser ============
+\usepackage[round,colon,authoryear]{natbib}  % use citet{<reference_key>} for Etternavn (1999) and \citep{<reference_key>} for (Etternavn, 1999).
+\usepackage{har2nat}
+\bibliographystyle{apalike}  % or: agsm, apsr, dcu, jmr, jphysicsB, kluwer(, apalike)
+\usepackage[nottoc]{tocbibind}  % print the "Bibliography" in the table of contents 
+% (NB: also adds i.e. Index, Glossary and list of Listings. Use nottoc to remove table of contents, notlof to remove list of figures, notlot to remove list of tables, etc.)
+
+
+% ===== Linker ================ 
+\usepackage[colorlinks=true, a4paper=true, pdfstartview=FitV, linkcolor=black, citecolor=black, urlcolor=blue]{hyperref} %pdfborder=000,pdftex=true
+%\pdfcompresslevel=9
+    \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+    \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+\usepackage{url}
+
+
+% ===== Innholdsfortegnelse ===
+\setcounter{tocdepth}{1}    % Setter hvor mange nivåer tableofcontenst skal ta med, her: 2, så vi får med section og subsection, men ikke subsubsection
+%\usepackage[titletoc]{appendix}
+
+
+% ===== Index =================
+\usepackage{makeidx}
+\makeindex
+\let\orgtheindex\theindex
+\let\orgendtheindex\endtheindex
+\def\theindex{%
+\def\twocolumn{\begin{multicols}{2}}%
+\def\onecolumn{}%
+\clearpage
+\orgtheindex
+}
+\def\endtheindex{%
+\end{multicols}%
+\orgendtheindex
+}
+
+% ===== Acronyms ==============
+% to use: \ac{<acronym>}
+% to add in acronym environment: \DeclareAcronym{<id>}{<list of keys>}, i.e. short = <short name>, long  = <long name>
+\usepackage{acro}
+    \acsetup{list-long-format=\capitalisewords}
+    \usepackage{mfirstuc}  % provides \capitalisewords
+
+% ===== Header ================
+\usepackage{fancyhdr}
+%    \setlength{\headheight}{15.2pt}
+%\pagestyle{empty}      % or fancy
+
+
+% ===== Abstract ==============
+% Define abstract environment for book class (as it is in report; article has another)
+\newenvironment{abstract}
+{
+\clearpage\null%\vfill
+\begin{center}%
+\Large\textsc{\abstractname}
+\end{center}
+}%
+{\vfill\null}
+
+
+% ===== Bokser rundt tekst =====
+\usepackage{framed, color}
+\definecolor{shadecolor}{rgb}{0.9,0.9,0.9}    %\begin{shaded} This is some text. \end{shaded}
+% yellow: {1,0.8,0.3}
+%use framed, snugshade (smalere shaded) or leftbar instead of shaded.
+
+% ===== Graphics path ==========
+\graphicspath{
+    {fig/}
+    {fig/introduction/}
+    {fig/methods/}
+    {fig/experimental-details/}
+    {fig/results/}
+    {fig/results/subA/}
+    {fig/results/subA/As-received/}
+    {fig/results/subA/Etched/}
+    {fig/results/subB/}
+    {fig/results/subB/As-received/}
+    {fig/results/subB/Polished&Etched/}
+    {fig/results/subC/}
+    {fig/results/subC/As-received/}
+    {fig/results/subC/Etched/}
+    {fig/results/project-thesis/}
+}
+    \def\input@path{
+    {fig/}
+    {fig/introduction/}
+    {fig/methods/}
+    {fig/experimental-details/}
+    {fig/results/}
+    {fig/results/subA/}
+    {fig/results/subA/As-received/}
+    {fig/results/subA/Etched/}
+    {fig/results/subB/}
+    {fig/results/subB/As-received/}
+    {fig/results/subB/Polished&Etched/}
+    {fig/results/subC/}
+    {fig/results/subC/As-received/}
+    {fig/results/subC/Etched/}
+    {fig/results/project-thesis/}
+}
+    
+% ===== Lists ==================
+\usepackage{enumitem}           % for the costimization of the itemize, enumerate, etc. environment
+
+% ===== Miscellaneous ==========
+\usepackage{layouts}
+\usepackage{layout}
+\usepackage{amsbsy}
+\usepackage{lipsum}             % ability to use /lipsum for autogenerated text
+\usepackage{comment}  % Give comment environment for commenting out paragraphs.
+\usepackage{longtable}  % Table that can span multiple pages.

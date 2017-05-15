@@ -1,0 +1,163 @@
+% Dette er kommandoene som er lagt til for å brukes med dokumentet.
+
+% ===== Font ======================
+
+% --- Bold and italics
+\newcommand{\textbi}[1]{\textbf{\textit{#1}}}
+
+
+% ===== Miscellaneous =============
+
+% --- Underscript in mathematical symbols
+\renewcommand{\rm}[1]{\mathrm{#1}}
+
+% --- Tekst over mattesymbol
+\newcommand{\textover}[2]{\mathrel{\overset{\makebox[0pt]{\mbox{\normalfont\tiny\sffamily #2}}}{#1}}}
+
+% --- A nice shaded, centered box
+\newcommand{\mybox}[1]{
+\begin{snugshade}
+\begin{center}
+#1
+\end{center}
+\end{snugshade}
+}
+
+% --- Numerere align* med \numberthis \label{eq:<LABEL>}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+% --- Inline quotes
+\newcommand{\inquote}[1]{``#1''}
+
+% --- Empty page (without everything, even page numbering).
+\newcommand{\emptypage}{\newpage\null\thispagestyle{empty}\newpage}
+
+
+% ===== Symbols ===================
+
+% --- Degrees
+\newcommand{\degree}{°}
+\newcommand{\degrees}{°}
+
+% --- Big \ell
+\newcommand{\bell}{\ensuremath{\boldsymbol\ell}}
+
+% --- Tilde
+\newcommand{\tildesymbol}{\raise.17ex\hbox{$\scriptstyle\sim$}}
+
+% ===== Mathematics ===============
+
+% --- Alias for differential
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}                   % Differentials should not be in italics
+
+% --- Mean
+\def\mean#1{\left< #1 \right>}                              % angled mean brackets
+
+% --- Absolute value and normed value
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+\makeatletter
+% Swap definition of \abs* and \norm* --> \abs and \norm resizes the size of the brackets, starred version doesn't.
+\let\oldabs\abs                                 
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}                       % the absolute value symbol
+%
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}                    % the normed value symbol
+\makeatother
+
+% --- Derivatives
+\newcommand{\underdot}[1]{\d{#1}}                           % \d is redefined to \underdot
+\renewcommand{\d}[2]{\frac{\diff #1}{\diff #2}}             % derivatives (\d is redefined to \underdot)
+\newcommand{\dd}[2]{\frac{\diff^2 #1}{\diff #2 ^2}}         % double derivatives
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}        % partial derivatives
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2 ^2}}  % double partial derivatives
+\newcommand{\pdc}[3]{\left(\frac{\partial #1}{\partial #2}\right)_{#3}} % thermodynamics partial derivatives
+
+% --- Grad, div, curl
+\newcommand{\grad}[1]{\nabla #1}                            % gradient operator
+\newcommand{\divsymb}[1]{\div #1}                           % \div is redefined to \divsymb
+\renewcommand{\div}[1]{\nabla \cdot #1}                     % divergence operator (\div is redefined to \divsymb)
+\newcommand{\curl}[1]{\nabla \times #1}                     % curl operator
+
+% --- Integrals
+\newcommand{\integral}[4]{\int \limits_{#1}^{#2} #3 \, \diff #4}
+\newcommand{\ointegral}[4]{\oint \limits_{#1}^{#2} #3 \, \diff #4}
+
+% --- Brackets, parentheses, braces, etc. 
+\newcommand{\brackets}[1]{\left[ #1 \right]}                % brackets
+\newcommand{\parentheses}[1]{\left( #1 \right)}             % parentheses
+\newcommand{\braces}[1]{\left\{ #1 \right\}}                % braces
+
+% --- Fourier
+\newcommand{\fourier}[1]{\mathscr{F}\{#1\}}                 % Fourier
+\newcommand{\invfourier}[1]{\mathscr{F}^{-1}\{#1\}}         % Inverse Fourier
+
+% --- Complex numbers
+\newcommand{\real}[1]{\operatorname{Re}\{#1\}}              % real part
+\newcommand{\imag}[1]{\operatorname{Im}\{#1\}}              % imaginary part
+
+% --- Vectors and unitvectors
+\newcommand{\unitvec}[1]{\bm{\hat{#1}}}                     % bold unit vector with hat
+\renewcommand{\vec}[1]{\bm{#1}}                             % bold vector
+
+% --- Tensor and matrices
+\newcommand{\tens}[1]{\overset{\leftrightarrow}{\bm{#1}}}   % tensor symbol
+\newcommand{\mat}[1]{\mathbb{#1}}                           % double lined font for matrix symbol
+\newcommand{\pmat}[1]{\begin{pmatrix}#1\end{pmatrix}}       % matrix with parentheses around
+\newcommand{\bmat}[1]{\begin{bmatrix}#1\end{bmatrix}}       % matrix with brackets around
+\newcommand{\Bmat}[1]{\begin{Bmatrix}#1\end{Bmatrix}}       % matrix with braces around
+\newcommand{\vmat}[1]{\begin{vmatrix}#1\end{vmatrix}}       % matrix with vertical lines
+\newcommand{\vvmat}[1]{\begin{Vmatrix}#1\end{Vmatrix}}      % matrix with double vertical lines
+\renewcommand{\det}[1]{\abs{#1}}                            % determinant
+
+% --- Big-O notation
+\newcommand{\order}[1]{\mathcal{O}(#1)}
+
+% --- Implication and not-implication
+\newcommand{\notimplies}{\centernot\implies}
+
+%\={ } makes numbers appear over equal signs (\= is redefined to \baraccent)
+
+% ===== Quantum Physics ============
+\newcommand{\operator}[1]{\hat{#1}}                                         % operator hat
+\newcommand{\commutator}[2]{\left[ #1, #2 \right]}                          % commutator
+\newcommand{\parity}{\operator{\mathcal{P}}}                                % parity operator
+
+% --- bra-ket notation
+\DeclarePairedDelimiter\bra{\langle}{\rvert}                                % Dirac bras
+\DeclarePairedDelimiter\ket{\lvert}{\rangle}                                % Dirac kets
+\DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1 \delimsize\vert #2} % Dirac brackets
+
+
+% ===== Physics ===================
+\newcommand{\atom}{\mathrm{atoms\,}}
+\newcommand{\atomic}{\mathrm{at.\,}}
+\newcommand{\particle}{\mathrm{particles\,}}
+
+% ===== Comments ==================
+% --- Temporary comments by myself.
+\newcommand{\todo}[1]{\textbf{\color{red}#1}}
+
+% --- Temporary comments by Andreas.
+\newcommand{\andreas}[1]{\textbf{\color{green}#1}}
+
+% --- Do not show numbering on subsection.
+%\makeatletter
+%\def\@seccntformat#1{%
+%  \expandafter\ifx\csname c@#1\endcsname\c@subsection\else
+%  \csname the#1\endcsname\quad
+%  \fi}
+%\makeatother
+
+% ===== Subfigure =================
+\usepackage{xparse}     % newcommand with multiple optional arguments.
+\DeclareDocumentCommand{\mySubfigure}{ O{\todo{Add caption.}} m m o }
+{
+    \begin{subfigure}[t]{#2}
+        \includegraphics[width=\linewidth]{#3}
+        \caption{#1}
+        \IfNoValueTF {#4}
+            {            }
+            { \label{#4} }
+    \end{subfigure}%
+}%\subfigure[<Subcaption>]{\includegraphics[width=<width>]{<figure file>}\label{<label>}}
