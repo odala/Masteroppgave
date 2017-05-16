@@ -16,10 +16,9 @@
 %%===================================
 \frontmatter
 
-%\begin{comment}
+\begin{comment}
 
 % Title page
-\input{frontmatter/front}
 \input{frontmatter/front2}
 
 % Information
@@ -53,25 +52,28 @@
 % List of acronyms and abbreviations (symbols, and notation) [optional]
 \printacronyms[heading=chapter, name=List of Acronyms, include-classes = {acro}, sort=true]
 
-%\end{comment}
+\end{comment}
 
 
 %%===================================
 % --- Mainmatter
 %%===================================
 \mainmatter
-\acresetall % resets acronyms. Each acronym will behave as if it is called for the first time.
+
+% Resets acronyms.
+% Each acronym will behave as if it is called for the first time.
+\acresetall
 
 % Chapters
 %\input{01_introduction}
 %\input{02_methods}
 %\input{03_experimental-details}
-%\input{04_subAa}
-%\input{04_subBa}
-%\input{04_subCa}
-%\input{04_subAb}
-%\input{04_subBb}
-%\input{04_subCb}
+\input{04_subAa}
+\input{04_subBa}
+\input{04_subCa}
+\input{04_subAb}
+\input{04_subBb}
+\input{04_subCb}
 %\input{04_subBc}
 %\input{04b_comparison}
 %\input{05_conclusions}
