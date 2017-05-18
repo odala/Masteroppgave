@@ -44,11 +44,17 @@ Fig.~\ref{fig:add_label}
 % Figure with subfigures.
 \begin{figure}[htbp]
     \centering
-    \subfigure[\todo{Subcaption.}]{\includegraphics[width=0.3\linewidth]{unknown.png}}
-    \quad
-    \subfigure[\todo{Subcaption.}]{\includegraphics[width=0.3\linewidth]{unknown.png}}
-    \quad
-    \subfigure[\todo{Subcaption.}]{\includegraphics[width=0.3\linewidth]{unknown.png}}
+    \begin{subfigure}[0.5\textwidth]
+        \centering
+        \includegraphics[width=\linewidth]{unknown.png}
+        \caption{\todo{Caption.}}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[0.5\textwidth]
+        \centering
+        \includegraphics[width=\linewidth]{unknown.png}
+        \caption{\todo{Caption.}}
+    \end{subfigure}
     \caption[\todo{Caption.}]{\todo{Caption.}}
     \label{fig:add_label}
 \end{figure}
@@ -59,7 +65,7 @@ Fig.~\ref{fig:add_label}
 \begin{figure}[htbp]
     \centering
     \subfigure[\todo{Subcaption.}]{\includegraphics[width=0.4\linewidth]{unknown.png}}
-    \quad
+    \hfill
     \subfigure[\todo{Subcaption.}]{\includegraphics[width=0.4\linewidth]{unknown.png}}
     \caption[\todo{Caption}]{\todo{Caption}}\label{fig:add_label}
 \end{figure}
@@ -67,7 +73,7 @@ Fig.~\ref{fig:add_label}
 \ContinuedFloat
     \centering
     \subfigure[\todo{Subcaption.}]{\includegraphics[width=0.4\linewidth]{unknown.png}}
-    \quad
+    \hfill
     \subfigure[\todo{Subcaption.}]{\includegraphics[width=0.4\linewidth]{unknown.png}}
     \captionsetup{list=no}
     \caption{\emph{(continued)}}
@@ -81,7 +87,7 @@ Fig.~\ref{fig:add_label}
             \centering
             \includegraphics[width=\linewidth]{unknown.png}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.49\linewidth}
             \centering
             \includegraphics[width=\linewidth]{unknown.png}
@@ -94,7 +100,7 @@ Fig.~\ref{fig:add_label}
             \centering
             \includegraphics[width=\linewidth]{unknown.png}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.49\linewidth}
             \centering
             \includegraphics[width=\linewidth]{unknown.png}
@@ -112,7 +118,7 @@ Fig.~\ref{fig:add_label}
             \centering
             \includegraphics[width=\linewidth]{unknown.png}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.49\linewidth}
             \centering
             \includegraphics[width=\linewidth]{unknown.png}
