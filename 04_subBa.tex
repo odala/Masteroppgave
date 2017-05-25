@@ -63,7 +63,7 @@ Seven different types of particles and surface features were observed on the sur
             \centering
             \includegraphics[width=\linewidth]{C-3895-23A_edx3_m001.jpg}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.48\linewidth}
             \centering
             \includegraphics[width=\linewidth]{C-3895-23A_edx3_m001_eds.jpg}
@@ -76,7 +76,7 @@ Seven different types of particles and surface features were observed on the sur
             \centering
             \includegraphics[width=\linewidth]{C-3895-23Af2_m002.jpg}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.49\linewidth}
             \centering
             \includegraphics[width=\linewidth]{CdZnTe_eds.jpg}
@@ -93,7 +93,7 @@ Seven different types of particles and surface features were observed on the sur
             \centering
             \includegraphics[width=\linewidth]{alumina02_sem.jpg}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.49\linewidth}
             \centering
             \includegraphics[width=\linewidth]{alumina02_eds.jpg}
@@ -111,7 +111,7 @@ Seven different types of particles and surface features were observed on the sur
             \centering
             \includegraphics[width=\linewidth]{subB_silica_sem.jpg}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.49\linewidth}
             \centering
             \includegraphics[width=\linewidth]{subB_silica_eds.jpg}
@@ -124,7 +124,7 @@ Seven different types of particles and surface features were observed on the sur
             \centering
             \includegraphics[width=\linewidth]{C-3895-23A_tuning_05.jpg}%{carbon_eds_sem.jpg} %{C-3895-23_02_m002.jpg}%{C-3895-23A_tuning_05.jpg}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.49\linewidth}
             \centering
             \includegraphics[width=\linewidth]{carbon_eds.jpg}
@@ -137,7 +137,7 @@ Seven different types of particles and surface features were observed on the sur
             \centering
             \includegraphics[width=\linewidth]{eds_NaOCl2_C-3895-23A_edx8_m007.jpg}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.49\linewidth}
             \centering
             \includegraphics[width=\linewidth]{eds_NaClO2.jpg}
@@ -156,7 +156,7 @@ Seven different types of particles and surface features were observed on the sur
             \centering
             \includegraphics[width=\linewidth]{eds_Fe_C-3895-23A_edx5_m004.jpg}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.49\linewidth}
             \centering
             \includegraphics[width=\linewidth]{eds_Fe.jpg}
@@ -173,18 +173,39 @@ Fig.~\ref{fig:SEM_C389523_voids} shows \ac{sem} images of irregular shaped cavit
 
 \begin{figure}[htbp]
     \centering
-    \mySubfigure[SEM image at a magnification of 400$\times$.]{0.44\linewidth}{C-3895-23A_tuning_04.jpg}
-    \mySubfigure[SEM image at a magnification of 800$\times$.]{0.44\linewidth}{C-3895-23A_edx3_m002.jpg}
+    \begin{subfigure}[t]{\textwidth}
+          \begin{minipage}[t]{0.49\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{C-3895-23A_tuning_04.jpg}
+          \end{minipage}
+          \hfill
+          \begin{minipage}[t]{0.49\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{C-3895-23A_edx3_m002.jpg}
+          \end{minipage}
+    \caption{High temperature voids.}\label{fig:subBa_high-temperature-voids}
+    \end{subfigure}%
+    \par\bigskip
     %\mySubfigure[SEM.]{0.44\linewidth}{C-3895-23_09_m001.jpg}
     %\mySubfigure[SEM.]{0.44\linewidth}{C-3895-23A_edx7_m002.jpg}
     %\mySubfigure[SEM.]{0.44\linewidth}{C-3895-23A_edx7_m003.jpg}
-    \mySubfigure[SEM image at a magnification of 4000$\times$.]{0.44\linewidth}{C-3895-23A_edx7_m004.jpg}
-    \mySubfigure[SEM image at a magnification of 7000$\times$.]{0.44\linewidth}{C-3895-23A_K01_detail.jpg}
-    \caption[SEM images of voids on substrate B.]{Scanning electron microscopy (SEM) images of voids on substrate B.}
+    \begin{subfigure}[t]{\textwidth}
+          \begin{minipage}[t]{0.49\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{C-3895-23A_edx7_m004.jpg}
+          \end{minipage}
+          \hfill
+          \begin{minipage}[t]{0.49\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{C-3895-23A_K01_detail.jpg}
+          \end{minipage}
+    \caption{Microvoids.}\label{fig:subBa_microvoids}
+    \end{subfigure}%
+    \caption[\Ac{sem} images of voids on substrate B.]{\Acf{sem} images of voids on substrate B.}
     \label{fig:SEM_C389523_voids}
 \end{figure}
 
-\citet{reddy2014study} describe the irregularly shaped defects with sizes extending from \SI{10}{\micro\metre} to a few hundred microns as voids and the ones with size less than \SI{10}{\micro\metre} as microvoids. These types of defects are typically formed during the growth of the material and the density is dependent on the deviation from ideal growth conditions. \todo{Use FFI-article as reference. We call them high temperature voids.}
+\citet{selvig2007defects} describe the irregularly shaped defects with sizes extending from \SI{10}{\micro\metre} to a few hundred microns as high temperature voids, see Fig.~\ref{fig:subBa_high-temperature-voids}, and the ones with size less than \SI{10}{\micro\metre} as microvoids, see Fig.~\ref{fig:subBa_microvoids}. These types of defects are typically formed during the growth of the material and the density is dependent on the deviation from ideal growth conditions. High temperature voids are formed at substrate temperatures higher than the \ce{Te}-phase limit, while microvoids are formed at low substrate temperature.
 
 %\subsubsection{Type B.I}
 %Page 5-6 in eds report 1-10
@@ -192,11 +213,11 @@ Fig.~\ref{fig:SEM_B_particulates} shows \ac{sem} images of large pieces of mater
 
 \begin{figure}[htbp]
     \centering
-          \begin{minipage}[t]{0.48\linewidth}
+          \begin{minipage}[t]{0.49\linewidth}
             \centering
             \includegraphics[width=\linewidth]{C-3895-23_03.jpg}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.49\linewidth}
             \centering
             \includegraphics[width=\linewidth]{C-3895-23A_edx1_m006.jpg}
@@ -323,17 +344,31 @@ The surface topography of the as-received substrate B as seen in \ac{afm}, is sh
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1.0\linewidth]{subB2a_121_ftir_spectra.png}
+    \includegraphics[width=0.7\linewidth]{subB2a_121_ftir_spectra.png}
     \caption[\Ac{ftir} transmission spectra for the as-received substrate B2.]{\Acf{ftir} transmission spectra recorded from a $11\times11$ grid on the as-received (111)B-oriented substrate B2.}
     \label{fig:subB2a_ftir_spectra}
 \end{figure}
 
-\todo{Beskriv} Fig.~\ref{fig:subB2a_ftir_map_500cm-1}
+\todo{Beskriv} Fig.~\ref{fig:subB2a_ftir_map_500cm-1}. 
+
+The area of lower transmission form a semicircle in the lower part of substrate B2. Surprisingly, this semicircle is visible as a brighter area in \ac{sem}, see Fig.~\ref{fig:subB2b_sem_low_transmission}. It begins \SI{4.11}{\milli\metre} from the left edge, goes around up to about \SI{13.11}{\milli\metre} before it goes down, and ends \SI{1.89}{\milli\metre} from the right edge. The major influence on \ac{se} generation is the topography of the surface. Generally, edges and other pointy parts produce more \acp{se}, and hence, these parts look brighter than the rest of the image \citep{goldstein2012scanning}. This is not the case for the brighter area since the surface is as uniform and smooth as the surrounding substrate. Also, the average atomic number influence the contrast, but \ac{eds} spectra confirms that the low transmission area and the surrounding substrate have the same composition.
+
+It could be different crystal orientation that cause the contrast in the \ac{sem} images in Fig.~\ref{fig:subB2b_sem_low_transmission}, like for the twins on substrate B. 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1.0\linewidth]{subB2a_121_ftir_transmission_at_k500cm-1.png}
+    \includegraphics[width=0.7\linewidth]{subB2a_121_ftir_transmission_at_k500cm-1.png}
     \caption[\Ac{ftir} transmission map for the as-received substrate B at $k=\SI{500}{\centi\metre^{-1}}$.]{\Acf{ftir} transmission map recorded from a $11\times11$ grid on the as-received (111)B-oriented substrate B at wavenumber $k=\SI{500}{\centi\metre^{-1}}$.}
     \label{fig:subB2a_ftir_map_500cm-1}
 \end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{subB2b_sem_04_m005.png}
+    %\includegraphics[width=1.0\linewidth]{subB2b_sem_05_m002.png}\caption{Left edge}
+    %\includegraphics[width=1.0\linewidth]{subB2b_sem_05_m005.png}\caption{Upper edge}
+    %\includegraphics[width=1.0\linewidth]{subB2b_sem_05_m003.png}\caption{Right edge}
+    \caption[]{\Ac{sem} image of the right edge of the semicircle with low \ac{ir} transmission in the lower part of substrate B2. The semicircle appears brighter than the rest of the substrate surface.}\label{fig:subB2b_sem_low_transmission}
+\end{figure}
+
 %%========================================

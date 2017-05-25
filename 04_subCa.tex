@@ -7,11 +7,10 @@ Bright and dark field images of the as-received (211)B-oriented substrate C show
 
 \begin{figure}[htbp]
     \centering
-    \mySubfigure[Bright field.]{0.48\linewidth}{om_bf_subC_09_5x.jpg}[fig:subCa_om_bf]
-    %09 / 10 / 08
-    \mySubfigure[Dark field.]{0.48\linewidth}{om_df_subC_07_5x.jpg}[fig:subCa_om_df]
-    %07 / 06 / 05
-    \caption[Bright and dark field optical microscopy images of as-received substrate C.]{Bright and dark field optical microscopy images of as-received substrate C taken at the same location on the substrate surface at a magnification of $5\times$. The same particle configuration can be observed in both images.}
+    \mySubfigure{0.49\linewidth}{om_bf_subC_09_5x.jpg}[fig:subCa_om_bf]
+    \hfill
+    \mySubfigure{0.49\linewidth}{om_df_subC_07_5x.jpg}[fig:subCa_om_df]
+    \caption[Bright and dark field optical microscopy images of as-received substrate C.]{Optical microscopy images of as-received substrate C taken at the same location on the substrate surface at a magnification of $5\times$: \subref{fig:subCa_om_bf} Bright field; and \subref{fig:subCa_om_df} dark field. The same particle configuration can be observed in both images.}
     \label{fig:subCa_om}
 \end{figure}
 
@@ -32,7 +31,7 @@ Bright and dark field images of the as-received (211)B-oriented substrate C show
     \label{fig:subCa_densityData}
 \end{figure}
 
-An \ac{eds} spectrum of one of the particles reveals that the piece is composed of silica oxide, \ce{SiO2}, also known as silica, see Fig.~\ref{fig:subCa_polishing-grit}. The presence of silica can be explained by the frequent use of silica as an abrasive in polishing slurries for semiconducting material. The corresponding \ac{sem} image of residual polishing grit is shown next to the spectrum. The \ce{Al} contamination that can be seen in the \ac{eds} spectrum obtained from a large area of the substrate can come from residual \ce{Al2O3} polishing grit, also known as alumina. Due to the small extent of the individual residual particles, it was not possible to get \ac{eds} spectra from them unless multiple particles formed a larger pile, which was rarely observed.
+An \ac{eds} spectrum of one of the particles reveals that the piece is composed of silica oxide, \ce{SiO2}, also known as silica, see Fig.~\ref{fig:subCa_polishing-grit}. The \ac{sem} image displays an agglomeration of particles with a diameter of \SI{50}{\nano\metre}. The presence of silica can be explained by the frequent use of silica as an abrasive in polishing slurries for semiconducting material. The corresponding \ac{sem} image of residual polishing grit is shown next to the spectrum. The \ce{Al} contamination that can be seen in the \ac{eds} spectrum obtained from a large area of the substrate can come from residual \ce{Al2O3} polishing grit, also known as alumina. Due to the small extent of the individual residual particles, it was not possible to get \ac{eds} spectra from them unless multiple particles formed a larger pile, which was rarely observed.
 
 \begin{figure}
     \centering
@@ -41,14 +40,14 @@ An \ac{eds} spectrum of one of the particles reveals that the piece is composed 
             \centering
             \includegraphics[width=\linewidth]{subCa_sem_09_m010.jpg}
           \end{minipage}
-          \hspace{0.02\linewidth}
+          \hfill
           \begin{minipage}[t]{0.56\linewidth}
             \centering
             \includegraphics[width=\linewidth]{subCa_eds_s.png}
           \end{minipage}
-        \caption{\Ac{sem} image at a magnification of $150000\times$ of an agglomeration of particles with a diameter of \SI{50}{\nano\metre} and he corresponding \ac{eds} spectrum. The blue spectrum represents the measurements from the particles, while the pink spectrum represents the substrate surface next to the particles. The spectra reveal that the particles consist of silica (\ce{SiO2}).}\label{fig:subCa_polishing-grit}
+        \caption{}\label{fig:subCa_polishing-grit}
     \end{subfigure}%
-    \caption[\Ac{sem} images and \ac{eds} spectra of particles found on as-received substrate C.]{High resolution \acf{sem} images of particles found on the as-received substrate C and the corresponding \acf{eds} spectra of the particles.}\label{fig:subCa_sem_w_eds}
+    \caption[\Ac{sem} images and \ac{eds} spectra of particles found on as-received substrate C.]{High resolution \acf{sem} images of particles found on the as-received substrate C and the corresponding \acf{eds} spectra of the particles: \subref{fig:subCa_polishing-grit} silica (\ce{SiO2}), the blue spectrum represents the measurements from the particles, while the pink spectrum represents the substrate surface next to the particles.}\label{fig:subCa_sem_w_eds}
 \end{figure}
 
 The large particles observed in the dark field images \todo{sett inn sem-bilde og eds-spektrum.}
@@ -56,31 +55,34 @@ The large particles observed in the dark field images \todo{sett inn sem-bilde o
 %%=========================================
 %\section{AFM Study of As-Received Substrate C}
 \subsection{Surface Roughness}
-The as-received substrate C was characterised for surface topography by \ac{afm}. \Ac{afm} images of the substrate surface are shown in Fig.~\ref{fig:afm_subC}. Polishing grit particles can be observed all over the surface of the substrate. The typical polishing grit density on the (211)B-oriented substrate is \SI{\sim 6e7 }{\particle\centi\metre^{-2}}. The typical polishing grit length is \SIrange{50}{200}{\nano\metre} and the typical height was measured to be \SI{\sim 10}{\nano\metre} above the (211)B surface. The small height above the surface in comparison with the diameter of the particles indicates that the polishing grit particles have penetrated the surface and are partly included in the surface.
+The as-received substrate C was characterised for surface topography by \ac{afm}. \Ac{afm} images of the substrate surface are shown in Fig.~\ref{fig:subCa_afm}. Polishing grit particles can be observed all over the surface of the substrate. The typical polishing grit density on the (211)B-oriented substrate is \SI{\sim 6e7 }{\particle\centi\metre^{-2}}. The typical polishing grit length is \SIrange{50}{200}{\nano\metre} and the typical height was measured to be \SI{\sim 10}{\nano\metre} above the (211)B surface. The small height above the surface in comparison with the diameter of the particles indicates that the polishing grit particles have penetrated the surface and are partly included in the surface.
 
 Fig.~\ref{fig:sem-afm-comparison} show a comparison of an \ac{afm} image with a \ac{sem} image taken at the same location on the as-received substrate C. The same particle configuration can be seen in both images, but the shape and size of the polishing grit particles observed in \ac{afm} are different to what were observed in the \ac{sem} images. This image artifact in the \ac{afm} image can be explained by the convolution effect between the tip and the polishing grit particles, as described in Section~\ref{sec:afm}. In other words, due to a too-course tip, an image artifact occur in the \ac{afm} image that makes the particles look wider and longer than they are. 
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{\linewidth}
+    \begin{subfigure}[t]{0.3\linewidth}
     \centering
-        \includegraphics[width=0.5\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170405Topography022.png}
-        \caption{Near centre, \ac{rms} roughness \SI{0.95}{\nano\metre}.}%0,33\SI{0,28}{\nano\metre}
+        \includegraphics[width=\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170405Topography022.png}
+        \caption{}%0,33\SI{0,28}{\nano\metre}
+        \label{fig:subCa_afm_centre}
     \end{subfigure}
-    \par\bigskip
-    \begin{subfigure}[t]{\linewidth}
+    \hfill
+    \begin{subfigure}[t]{0.3\linewidth}
     \centering
-        \includegraphics[width=0.5\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170405Topography026.png}
-        \caption{Near left edge, \ac{rms} roughness \SI{1.4}{\nano\metre}.}%0,46 \SI{0,36}{\nano\metre}
+        \includegraphics[width=\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170405Topography026.png}
+        \caption{}%0,46 \SI{0,36}{\nano\metre}
+        \label{fig:subCa_afm_edge}
     \end{subfigure}
-    \par\bigskip
-    \begin{subfigure}[t]{\linewidth}
+    \hfill
+    \begin{subfigure}[t]{0.3\linewidth}
     \centering
-        \includegraphics[width=0.5\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170405Topography028.png}
-        \caption{Near upper left corner, \ac{rms} roughness \SI{1.4}{\nano\metre}.}% 0.54\SI{0,40}{\nano\metre}
+        \includegraphics[width=\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170405Topography028.png}
+        \caption{}% 0.54\SI{0,40}{\nano\metre}
+        \label{fig:subCa_afm_corner}
     \end{subfigure}
-    \caption[\Ac{afm} of as-received substrate C.]{\Acf{afm} measurements of the as-received substrate C. Images of a $\SI{5}{\micro\metre}\times\SI{5}{\micro\metre}$ area are taken at the centre, edge, and corner of the substrate.}
-    \label{fig:afm_subC}
+    \caption[\Ac{afm} of as-received substrate C.]{\Acf{afm} measurements of the as-received substrate C. Images of $\SI{5}{\micro\metre}\times\SI{5}{\micro\metre}$ areas are taken at three different locations on the substrate surface: \subref{fig:subCa_afm_centre} near the centre, \ac{rms} roughness \SI{0.95}{\nano\metre}; \subref{fig:subCa_afm_edge} near the left edge, \ac{rms} roughness \SI{1.4}{\nano\metre}; and \subref{fig:subCa_afm_corner} near the upper left corner, \ac{rms} roughness \SI{1.4}{\nano\metre}.}
+    \label{fig:subCa_afm}
 \end{figure} % AFM, substrate C, as-received.
 
 %\todo{rar forklaring?}
@@ -92,13 +94,13 @@ The low \ac{rms} roughness indicates the absence of deep scratches. The deepest 
     \centering
     \begin{subfigure}[t]{0.45\linewidth}
         \includegraphics[width=\linewidth]{subCa_sem_afm_compare_m010.jpg}
-        \caption{\Ac{sem} image taken at a magnification of $30000\times$.}
+        \caption{}\label{fig:sem-afm-comparison_sem}
     \end{subfigure}%
     \begin{subfigure}[t]{0.45\linewidth}
         \includegraphics[width=\linewidth,trim={2.5cm 14.5cm 23cm 1.5cm},clip]{subCa_afm_lysmikrokopi05_afm02.png}
-        \caption{\Ac{afm} image of a $\SI{10}{\micro\metre}\times\SI{10}{\micro\metre}$ area.}
+        \caption{}\label{fig:sem-afm-comparison_afm}
     \end{subfigure}%
-    \caption[Comparison of an \ac{afm} image with a \ac{sem} image taken at the same location on substrate C.]{Comparison of an \ac{afm} image with a \ac{sem} image taken at the same location on the as-received substrate C. The height of the features in the \ac{afm} image is displayed as colour gradations. The same location with the same particles can be seen in both the \ac{afm} image and the \ac{sem} image, but due to a too-course tip, an image artifact occur in the \ac{afm} image that makes the particles look wider and longer than they are. The advantage of the \ac{afm} image is that it gives height information.}
+    \caption[Comparison of an \ac{afm} image with a \ac{sem} image taken at the same location on substrate C.]{Comparison of \subref{fig:sem-afm-comparison_sem} a \ac{sem} image with \subref{fig:sem-afm-comparison_afm} an \ac{afm} image taken at the same location on the as-received substrate C. The height of the features in the \ac{afm} image is displayed as colour gradations. The same location with the same particles can be seen in both the \ac{afm} image and the \ac{sem} image, but due to a too-course tip, an image artifact occur in the \ac{afm} image that makes the particles look wider and longer than they are. The advantage of the \ac{afm} image is that it gives height information.}
     \label{fig:sem-afm-comparison}
 \end{figure}
 
@@ -144,24 +146,37 @@ Near-\ac{ir} transmission microscopy images of as-received substrate C show a st
 % FTIR transmission spectra
 \subsection{IR Characterisation}
 
-\Ac{ftir} transmission spectra were recorded from a $5\times5$ grid on the as-received substrate C. The grid points were placed \SI{2.3}{\milli\metre} from the edge and had \SI{2.6}{\milli\metre} between nearest neighbours. All but five measurements had an \ac{ir} transmittance between \SI{62}{\percent} and \SI{67}{\percent} in the wavenumber range between \SI{1000}{\centi\metre^{-1}} and \SI{5000}{\centi\metre^{-1}}, see Fig.~\ref{fig:subCa_ftir_spectra}. The indicator $T_{1000}/T_{5000}$ was a little bit less than one for these points. According to \citet{yujie2004infrared}, the \ac{czt} substrates with these characteristics are free of precipitates, have low free carrier concentration, and have resistivity that exceeds \SI{e6}{\ohm\centi\metre}.
+\Ac{ftir} transmission spectra were recorded from a $5\times5$ grid on the as-received substrate C. The grid points were placed \SI{2.3}{\milli\metre} from the edge and had \SI{2.6}{\milli\metre} between nearest neighbours. All but five measurements had an \ac{ir} transmittance between \SI{62}{\percent} and \SI{67}{\percent} in the wavenumber range between \SI{500}{\centi\metre^{-1}} and \SI{5000}{\centi\metre^{-1}}, see Fig.~\ref{fig:subCa_ftir_spectra}. The indicator $T_{1000}/T_{5000}$ was a little bit less than one for these points. According to \citet{yujie2004infrared}, the \ac{czt} substrates with these characteristics are free of precipitates, have low free carrier concentration, and have resistivity that exceeds \SI{e6}{\ohm\centi\metre}. The transmission at $k=\SI{500}{\centi\metre^{-1}}$ can be seen in Fig.~\ref{fig:subCa_ftir_map_500cm-1}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1.0\linewidth]{subCa_25_ftir_spectra.png}
+    \includegraphics[width=0.7\linewidth]{subCa_25_ftir_spectra.png}
     \caption[\Ac{ftir} transmission spectra for the as-received substrate C.]{\Acf{ftir} transmission spectra recorded from a $5\times5$ grid on the as-received (211)B-oriented substrate C.}
     \label{fig:subCa_ftir_spectra}
 \end{figure}
 
-The five measurements obtained from the upper edge of substrate C had transmittance between \SI{55}{\percent} and \SI{61}{\percent} in the wavenumber region of interest, which are lower than for the rest of the substrate, and the indicator $T_{1000}/T_{5000}$ tends to be a little bit larger than one for these points. According to \citet{yujie2004infrared}, the \ac{czt} substrates with these characteristics have a high density of tiny and dense \ce{Te} precipitates, high free carrier concentrations, and a resistivity less than \SI{500}{\ohm\centi\metre}.
-
-\todo{Beskriv} Fig.~\ref{fig:subCa_ftir_map_500cm-1}
+The five measurements obtained from the upper edge of substrate C had transmittance between \SI{55}{\percent} and \SI{61}{\percent} in the wavenumber region of interest, which are lower than for the rest of the substrate. Apart from having lower transmission they have the same shape and similar $T_{1000}/T_{5000}$ indicator as the other spectra. For this reason, and the fact that the lower transmission occur in the upper edge, it is believed that the frame that holds the substrate obscure the light at the upper edge, and results in an overall lower transmission (E. Selvig, personal communication, May 24, 2017). Taking this into account, the spectra from the upper edge have the same characteristics as the rest.
+%and the indicator $T_{1000}/T_{5000}$ tends to be a little bit larger than one for these points. According to \citet{yujie2004infrared}, the \ac{czt} substrates with these characteristics have a high density of tiny and dense \ce{Te} precipitates, high free carrier concentrations, and a resistivity less than \SI{500}{\ohm\centi\metre}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1.0\linewidth]{subCa_25_ftir_transmission_at_k500cm-1.png}
+    \includegraphics[width=0.7\linewidth]{subCa_25_ftir_transmission_at_k500cm-1.png}
     \caption[\Ac{ftir} transmission map for the as-received substrate C at $k=\SI{500}{\centi\metre^{-1}}$.]{\Acf{ftir} transmission map recorded from a $5\times5$ grid on the as-received (211)B-oriented substrate C at wavenumber $k=\SI{500}{\centi\metre^{-1}}$.}
     \label{fig:subCa_ftir_map_500cm-1}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.54\linewidth}
+        \includegraphics[width=\linewidth]{subCa_25_ftir_spectra.png}
+        \caption{}\label{fig:subCa_ftir_spectra}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.44\linewidth}
+        \includegraphics[width=\linewidth]{subCa_25_ftir_transmission_at_k500cm-1.png}
+        \caption{}\label{fig:subCa_ftir_map_500cm-1}
+    \end{subfigure}
+    \caption[\Ac{ftir} measurements of the as-received substrate C at $k=\SI{500}{\centi\metre^{-1}}$.]{\Acf{ftir} measurements recorded from a $5\times5$ grid on the as-received (211)B-oriented substrate C: \subref{fig:subCa_ftir_spectra} Transmission spectra; \subref{fig:subCa_ftir_map_500cm-1} transmission map at wavenumber $k=\SI{500}{\centi\metre^{-1}}$.}
 \end{figure}
 
 %%=========================================

@@ -36,11 +36,48 @@ The dark field images taken of the surface of substrate B after polishing and et
     \caption[\Ac{sem} images of typical areas on substrate B and B2 with surface pre-growth preparation.]{\Acf{sem} images of a typical area near the centre of substrate B and substrate B2 after surface pre-growth preparation taken at a magnification of $5000\times$.}\label{fig:subBb_and_subB2b_sem_typical}
 \end{figure}
 
+%%=========================================
+% Twin boundaries.
+Four twin boundaries are visible to the naked eye after polish and etch. Two in the upper left corner and two that span from the lower right corner to the middle of the upper edge, see Fig.~\ref{fig:subBb_twins_illustration}. By doing an \todo{spør Espen om navn på etch} etch it was established that the area between the lines in the upper left corner and between the two other lines were (111)B-oriented, while the surrounding area were twins. A part of the twin boundary near the upper left corner can be seen in Fig.~\ref{fig:subBb_sem_twins}. It forms a piecewise straight line with steps that change the direction by \SI{\pm 45}{\degree} every \SIrange{10}{200}{\micro\metre}.
+
+\citet{ashida2015crystallographic} studied the dependence of \ac{sem} contrast on crystallographic orientation in \ce{SiC} polytypes. They found that features look brighter when the direction of the incident electron beam is almost parallel to the topmost stacking sequence direction. However, the formation mechanism of the \ac{sem} contrast is still under discussion. This explains why there is a visible contrast at the twin boundaries.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.4\linewidth}
+        \centering
+        \begin{tikzpicture}[remember picture]
+          \node[anchor=south west,inner sep=0] (imageA) {\includegraphics[width=\linewidth]{subBb_twins.png}};
+          \begin{scope}[x={(imageA.south west)},y={(imageA.north east)}]
+            \node[coordinate] (A) at (0.1\linewidth, 0.9\linewidth) {};
+          \end{scope}
+        \end{tikzpicture}
+    \caption{Location of twin boundaries.}\label{fig:subBb_twins_illustration}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.5333\linewidth}
+    \centering
+        \begin{tikzpicture}[remember picture]
+          \node[anchor=south west,inner sep=0] (imageB) {\includegraphics[width=\linewidth]{subBb_sem_01_m005.jpg}};
+          \begin{scope}[x={(imageB.south west)},y={(imageB.north east)}]
+            \node[coordinate] (B) at (0.5,0.5) {};
+          \end{scope}
+        \end{tikzpicture}
+    \caption{\Ac{sem} image of twin boundary near the upper left corner.}\label{fig:subBb_sem_twins}
+    \end{subfigure}
+    \caption[Twin boundaries on substrate B.]{Twin boundaries on substrate B.}\label{fig:subBb_twin_boundaries}
+\end{figure}
+% Draw arrow.
+\begin{tikzpicture}[remember picture,overlay]
+  \draw[->, red, line width=0.5mm ] (B) -- (A);
+\end{tikzpicture}
 
 %%=========================================
 \subsection{Particles}
 
-\begin{figure}
+Four different types of particles were observed on the surface of substrate B and substrate B2 after surface pre-growth preparation, see Fig.~\ref{fig:subBb_sem_w_eds}. They will be described and identified in the following.
+
+\begin{figure}[htbp]
     \centering
     \begin{subfigure}[t]{\textwidth}
           \begin{minipage}[t]{0.49\linewidth}
@@ -80,7 +117,7 @@ The dark field images taken of the surface of substrate B after polishing and et
           \end{minipage}
         \caption{Particle based on \SI{\sim 5}{} flouride (\ce{F}) and \SI{\sim 2}{} carbon (\ce{C}).}\label{fig:subB2b_C2F5}
     \end{subfigure}
-    \caption[\Ac{sem} images and \ac{eds} spectra of particles found on substrate B after surface pre-growth preparation.]{High resolution \acf{sem} images of particles found on substrate B after surface pre-growth preparation and the corresponding \acf{eds} spectra of the particles.}\label{fig:subBb_sem_w_eds}
+    \caption[\Ac{sem} images and \ac{eds} spectra of particles found on substrate B and substrate B2 after surface pre-growth preparation.]{High resolution \acf{sem} images of particles found on substrate B and substrate B2 after surface pre-growth preparation and the corresponding \acf{eds} spectra of the particles.}\label{fig:subBb_sem_w_eds}
 \end{figure}
 
 \begin{figure}[htbp]

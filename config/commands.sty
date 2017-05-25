@@ -151,7 +151,7 @@
 
 % ===== Subfigure =================
 \usepackage{xparse}     % newcommand with multiple optional arguments.
-\DeclareDocumentCommand{\mySubfigure}{ O{\todo{Add caption.}} m m o }
+\DeclareDocumentCommand{\mySubfigure}{ O{} m m o }
 {
     \begin{subfigure}[t]{#2}
         \includegraphics[width=\linewidth]{#3}
@@ -159,5 +159,10 @@
         \IfNoValueTF {#4}
             {            }
             { \label{#4} }
+        
     \end{subfigure}%
 }%\subfigure[<Subcaption>]{\includegraphics[width=<width>]{<figure file>}\label{<label>}}
+
+% --- Get parentheses around subrefs.
+\let\oldsubref\subref
+\renewcommand{\subref}[1]{(\oldsubref{#1})}
