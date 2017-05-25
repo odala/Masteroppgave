@@ -104,41 +104,43 @@ The ultimate goal for the \ac{mbe} preparation etch is to provide a clean, smoot
 %%=========================================
 %\section{AFM Study of Etched Substrate C}
 \subsection{Surface Roughness}
+
+Fig.~\ref{fig:subCb_afm}
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{\linewidth}
+    \begin{subfigure}[t]{0.3\linewidth}
     \centering
-        \includegraphics[width=0.5\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170428Topography002_centre.png}
-        \caption{Near centre, \ac{rms} roughness \SI{1.4}{\nano\metre}.}  %\SI{0.85}{\nano\metre}}
+        \includegraphics[width=\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170428Topography002_centre.png}
+        \caption{}\label{fig:subCb_afm_centre}  %\SI{0.85}{\nano\metre}}
     \end{subfigure}%
-    \par\bigskip
-    \begin{subfigure}[t]{\linewidth}
+    \hfill
+    \begin{subfigure}[t]{0.3\linewidth}
     \centering
-        \includegraphics[width=0.5\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170427Topography016_upperedge.png}
-        \caption{Near upper edge, \ac{rms} roughness \SI{1.4}{\nano\metre}.}  %\SI{0.77}{\nano\metre}}
+        \includegraphics[width=\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170427Topography016_upperedge.png}
+        \caption{}\label{fig:subCb_afm_edge}  %\SI{0.77}{\nano\metre}}
     \end{subfigure}%
-    \par\bigskip
-    \begin{subfigure}[t]{\linewidth}
+    \hfill
+    \begin{subfigure}[t]{0.3\linewidth}
     \centering
-        \includegraphics[width=0.5\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170427Topography012_upperleftcorner.png}
-        \caption{Near upper left corner, \ac{rms} roughness \SI{2.8}{\nano\metre}.}  %\SI{1,04}{\nano\metre}}
+        \includegraphics[width=\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170427Topography012_upperleftcorner.png}
+        \caption{}\label{fig:subCb_afm_corner}  %\SI{1,04}{\nano\metre}}
     \end{subfigure}%
-    \caption[\Ac{afm} of substrate C with surface pre-growth preparation.]{\Acf{afm} measurements of substrate C with surface pre-growth preparation. Images of a $\SI{5}{\micro\metre}\times\SI{5}{\micro\metre}$ area are taken at the centre, edge, and corner of the substrate.}
-    \label{fig:afm_subCb}
+    \caption[\Ac{afm} of substrate C with surface pre-growth preparation.]{\Acf{afm} measurements of substrate C with surface pre-growth preparation. Images of $\SI{5}{\micro\metre}\times\SI{5}{\micro\metre}$ areas are taken at three different locations on the substrate surface: \subref{fig:subCb_afm_centre} near the centre, \ac{rms} roughness \SI{1.4}{\nano\metre}; \subref{fig:subCb_afm_edge} near the upper edge, \ac{rms} roughness \SI{1.4}{\nano\metre}; and \subref{fig:subCb_afm_corner} near the upper left corner, \ac{rms} roughness \SI{2.8}{\nano\metre}.}
+    \label{fig:subCb_afm}
 \end{figure} % AFM, substrate C, with surface pre-growth preparation.
 
 %%=========================================
 \subsection{Impurity Analysis}
 \begin{table}[htbp]
     \centering
-    \caption[\Ac{eds} impurity analysis of substrate C with surface pre-growth preparation.]{Results of the \acf{eds} impurity analysis at three different locations on the $15\times15$ \SI{}{\milli\metre^2} (211)B \ac{czt} substrate C with surface pre-growth preparation (atomic concentration \%). The X-ray signal is acquired from a $\SI{1270}{}\times\SI{890}{\micro\metre^2}$ area centred around the given $X$ and $Y$ values at a magnification of 100$\times$.}\label{tab:subCb_eds_analysis}
-    \begin{tabu} to 1.0\textwidth { X[1,c] X[1,c] X[1.125,c] X[1.125,c] X[1.125,c] X[1.125,c] X[1.125,c] X[1.125,c] X[1.125,c] }
+    \caption[\Ac{eds} impurity analysis of substrate C with surface pre-growth preparation.]{Results of the \acf{eds} impurity analysis at three different locations on the $15\times15$ \SI{}{\milli\metre^2} (211)B \ac{czt} substrate C with surface pre-growth preparation (atomic concentration \%). The X-ray signal is acquired from $\SI{1270}{\micro\metre}\times\SI{890}{\micro\metre}$ areas near the centre, upper edge, and upper left corner.}\label{tab:subCb_eds_analysis}
+    \begin{tabu} to 1.0\textwidth { X[1.85,r] X[1.125,c] X[1.125,c] X[1.125,c] X[1.125,c] X[1.125,c] X[1.125,c] X[1.125,c] }
     \hline
-        \textbf{$X$} (\SI{}{\milli\metre}) &  \textbf{$Y$} (\SI{}{\milli\metre}) & \textbf{\ce{Te}} (at.\%) & \textbf{\ce{Cd}} (at.\%) & \textbf{\ce{Zn}} (at.\%) & \textbf{\ce{Al} } (at.\%) & \textbf{\ce{Si}} (at.\%) & \textbf{\ce{C}} (at.\%) & \textbf{\ce{O}} (at.\%) \\
+         & \textbf{\ce{Te}} (at.\%) & \textbf{\ce{Cd}} (at.\%) & \textbf{\ce{Zn}} (at.\%) & \textbf{\ce{Al} } (at.\%) & \textbf{\ce{Si}} (at.\%) & \textbf{\ce{C}} (at.\%) & \textbf{\ce{O}} (at.\%) \\
         \hline
-         \SI{1.0}{} & \SI{14.0}{} & \SI{45.16}{} & \SI{45.26}{} & \SI{1.40}{} & \SI{1.79}{} & \SI{0.54}{} & \SI{5.85}{} & \SI{0}{} \\
-         \SI{7.5}{} & \SI{14.0}{} & \SI{44.91}{} & \SI{44.93}{} & \SI{1.43}{} & \SI{2.33}{} & \SI{0.53}{} & \SI{5.86}{} & \SI{0}{} \\
-         \SI{7.5}{} & \SI{7.5}{}  & \SI{45.02}{} & \SI{44.88}{} & \SI{1.45}{} & \SI{2.14}{} & \SI{0.52}{} & \SI{6.00}{} & \SI{0}{} \\
+         Near corner & \SI{45.16}{} & \SI{45.26}{} & \SI{1.40}{} & \SI{1.79}{} & \SI{0.54}{} & \SI{5.85}{} & \SI{0}{} \\ %\SI{1.0}{} & \SI{14.0}{}
+         Near edge & \SI{44.91}{} & \SI{44.93}{} & \SI{1.43}{} & \SI{2.33}{} & \SI{0.53}{} & \SI{5.86}{} & \SI{0}{} \\ % \SI{7.5}{} & \SI{14.0}{}
+         Near centre & \SI{45.02}{} & \SI{44.88}{} & \SI{1.45}{} & \SI{2.14}{} & \SI{0.52}{} & \SI{6.00}{} & \SI{0}{} \\ % \SI{7.5}{} & \SI{7.5}{} 
          \hline
     \end{tabu}
 \end{table}
