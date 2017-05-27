@@ -160,6 +160,21 @@ Substrate B2 have a similar distribution of polishing grit. There are higher den
     \label{fig:subBb_and_subB2b_densityData}
 \end{figure}
 
+In order to observe correlations between the occurrence of voids and microvoids on the as-received substrate B to the occurrence of polishing grit after polish and etch, the sample Pearson correlation coefficient was determined. \todo{Skriv inn formel. Og regn ut correlation.} If there are one dataset $x_i \in \{x_1, ..., x_n\}$ containing $n$ values and another dataset $y_i \in \{y_1, ..., y_n\}$ containg $n$ values, then the sample Pearson correlation coefficient is defined as
+
+\begin{equation}\label{eq:pearson_correlation_coefficient}
+    r = \frac{
+        n\sum_{i=1}^nx_iy_i - \sum_{i=1}^n x_i \sum_{i=1}^n y_i
+        }{
+        \sqrt{n\sum_{i=1}^n x_i^2 - \parentheses{\sum_{i=1}^n x_i}^2}\sqrt{n\sum_{i=1}^n y_i^2 - \parentheses{\sum_{i=1}^n y_i}^2} },
+\end{equation}
+where $\avg{x}=\frac{1}{n}\sum_{i=1}^n x_i$ is the sample mean; and analogously for $\avg{y}$.
+%
+%\begin{equation}
+%    r = \frac{\sum_{i=1}^n x_i y_i - n\avg{x}\avg{y}}{\parentheses{n-1}s_xs_y},
+%\end{equation}
+%where $s_x = \sqrt{\frac{1}{n-1}\sum_{i=1}^n \parentheses{x_i - \avg{x}}^2}$ is the sample standard deviation; and analogously for $s_y$.
+
 
 %%=========================================
 %\section{AFM Study of Polished and Etched Substrate B}

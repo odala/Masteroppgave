@@ -265,7 +265,7 @@ Fig.~\ref{fig:SEM_B_particulates} shows \ac{sem} images of large pieces of mater
             \centering
             \includegraphics[width=\linewidth]{C-3895-23A_edx1_m006.jpg}
           \end{minipage}
-        \caption[\Ac{sem} images of a particle on substrate B.]{\Acf{sem} images of a particle on substrate B.}\label{fig:SEM_B_particulates}  
+        \caption[\Ac{sem} images of \ac{czt} particles on as-revceived substrate B.]{\Acf{sem} images of \ac{czt} particles on the as-revceived substrate B.}\label{fig:SEM_B_particulates}  
 \end{figure}
 
 By comparing the \ac{eds} spectrum of the particle with the spectrum of the substrate surface, see Fig.~\ref{fig:SEM_B_particulates_eds}, it is seen that they are essentially the same. This indicates that the pieces consist of the same material as the substrate and that they could be debris from the cutting of the substrate.
@@ -275,10 +275,10 @@ Fig.~\ref{fig:subBa_polishing-grit_area1} displays an area on the surface where 
 
 \begin{figure}[htbp]
     \centering
-        \mySubfigure[Magnification of 200$\times$.]{0.49\linewidth}{SEM_C-3895-23A_a_m001.jpg}[fig:subBa_polishing-grit_area1]
+        \mySubfigure{0.49\linewidth}{SEM_C-3895-23A_a_m001.jpg}[fig:subBa_polishing-grit_area1]
         \hfill
-        \mySubfigure[Magnification of 15000$\times$.]{0.49\linewidth}{C-3895-23Ab_m003.jpg}[fig:subBa_polishing-grit_area2]
-    \caption[\Ac{sem} images of particles on substrate B.]{\Acf{sem} images of an accumulation of particles on substrate B.}\label{fig:subBa_polishing-grit_area}
+        \mySubfigure{0.49\linewidth}{C-3895-23Ab_m003.jpg}[fig:subBa_polishing-grit_area2]
+    \caption[\Ac{sem} images of particles on substrate B.]{\Acf{sem} images of an accumulation of particles on the as-received substrate B at a magnification of \subref{fig:subBa_polishing-grit_area1} $200\times$ and \subref{fig:subBa_polishing-grit_area2} $15000\times$.}\label{fig:subBa_polishing-grit_area}
 \end{figure}
 
 An \ac{eds} spectrum of the particle reveals that the piece is composed of alumina oxide, \ce{Al2O3}, also known as alumina, see Fig.~\ref{fig:subBa_polishing-grit_alumina}. The corresponding \ac{sem} image of residual polishing grit is shown next to the spectrum. The presence of alumina can be explained by the frequent use of alumina as an abrasive in polishing slurries for semiconducting material.
@@ -298,7 +298,7 @@ An area with lots of circular particles with diameter between \SI{100}{\nano\met
 \begin{figure}
     \centering
     \includegraphics[width=0.48\linewidth]{eds_NaOCl_overview_C-3895-23A_edx8_m008}
-    \caption{Scanning electron microscopy (SEM) image of particles of a particle on substrate B taken at a magnification of 1000$\times$.}
+    \caption[]{Scanning electron microscopy (SEM) image of particles of a particle on substrate B taken at a magnification of 1000$\times$.}
     \label{fig:eds_NaOCl_overview}
 \end{figure}
 
@@ -402,17 +402,21 @@ The surface topography of the as-received substrate B as seen in \ac{afm}, is sh
 
 \todo{Beskriv} Fig.~\ref{fig:subB2a_ftir_map_500cm-1}. 
 
-The area of lower transmission form a semicircle in the lower part of substrate B2. Surprisingly, this semicircle is visible as a brighter area in \ac{sem}, see Fig.~\ref{fig:subB2b_sem_low_transmission}. It begins \SI{4.11}{\milli\metre} from the left edge, goes around up to about \SI{13.11}{\milli\metre} before it goes down, and ends \SI{1.89}{\milli\metre} from the right edge. The major influence on \ac{se} generation is the topography of the surface. Generally, edges and other pointy parts that are produce more \acp{se}, and hence, these parts look brighter than the rest of the image \citep{goldstein2012scanning}. This is not the case for the brighter area since the surface is as uniform and smooth as the surrounding substrate. Also, the average atomic number influence the contrast, but \ac{eds} spectra confirms that the low transmission area and the surrounding substrate have the same composition.
+The area of lower transmission form a semicircle in the lower part of substrate B2. Surprisingly, this semicircle is visible as a brighter area in \ac{sem}, see Fig.~\ref{fig:subB2b_sem_low_transmission}. It begins \SI{4.11}{\milli\metre} from the left edge, goes around up to about \SI{13.11}{\milli\metre} before it goes down, and ends \SI{1.89}{\milli\metre} from the right edge. The major influence on \ac{se} generation is the topography of the surface. Generally, edges and other pointy parts that are produce more \acp{se}, and hence, these parts look brighter than the rest of the image \citep{goldstein2012scanning}. This is not the case for the brighter area since \ac{afm} measurements affirm that the surface is as uniform and smooth as the surrounding substrate. Also, the average atomic number influence the contrast, but \ac{eds} spectra confirm that the low transmission area and the surrounding substrate have the same composition.
 
-It could be different crystal orientation that cause the contrast in the \ac{sem} images in Fig.~\ref{fig:subB2b_sem_low_transmission}, like for the twins on substrate B. 
+It could be different crystal orientation that cause the contrast in the \ac{sem} images in Fig.~\ref{fig:subB2b_sem_low_transmission}, like for the twins on substrate B, see Section~\ref{sec:subBb} \todo{should not refernce forward in the text}. This is likely not the case since the grown layer do not have a bad area on top of the semicircle as it would have for a twin (E. Selvig, personal communication, May 24, 2017).
+
+\citet{sealy2000mechanism} showed that p-type semiconductors in general appear brighter and that n-type in general appear darker than undoped material in \ac{sem}. \todo{fit with the skrå spektra.}
 
 \begin{figure}
     \centering
-    \includegraphics[width=1.0\linewidth]{subB2b_sem_04_m005.png}
+    \mySubfigure{0.49\linewidth}{subB2b_sem_04_m007.png}[fig:subB2b_sem_low_transmission_left]
+    \hfill
+    \mySubfigure{0.49\linewidth}{subB2b_sem_04_m005.png}[fig:subB2b_sem_low_transmission_right]
     %\includegraphics[width=1.0\linewidth]{subB2b_sem_05_m002.png}\caption{Left edge}
     %\includegraphics[width=1.0\linewidth]{subB2b_sem_05_m005.png}\caption{Upper edge}
     %\includegraphics[width=1.0\linewidth]{subB2b_sem_05_m003.png}\caption{Right edge}
-    \caption[]{\Ac{sem} image of the right edge of the semicircle with low \ac{ir} transmission in the lower part of substrate B2. The semicircle appears brighter than the rest of the substrate surface.}\label{fig:subB2b_sem_low_transmission}
+    \caption[]{\Ac{sem} image of the \subref{fig:subB2b_sem_low_transmission_left} left and \subref{fig:subB2b_sem_low_transmission_right} right edge of the semicircle with low \ac{ir} transmission in the lower part of substrate B2. The semicircle appears brighter than the rest of the substrate surface.}\label{fig:subB2b_sem_low_transmission}
 \end{figure}
 
 %%========================================
