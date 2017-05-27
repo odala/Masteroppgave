@@ -60,23 +60,29 @@ Fig.~\ref{fig:sem-afm-comparison} show a comparison of an \ac{afm} image with a 
 
 \begin{figure}[htbp]
     \centering
+    \begin{subfigure}[t]{0.032\linewidth}
+    \centering
+        \includegraphics[width=\linewidth]{subCa_afm_scale.png}
+        \captionsetup{list=no}
+    \end{subfigure}
+    \hfill
     \begin{subfigure}[t]{0.3\linewidth}
     \centering
-        \includegraphics[width=\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170405Topography022.png}
+        \includegraphics[width=\linewidth]{subCa_afm_centre.png}
         \caption{}%0,33\SI{0,28}{\nano\metre}
         \label{fig:subCa_afm_centre}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.3\linewidth}
     \centering
-        \includegraphics[width=\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170405Topography026.png}
+        \includegraphics[width=\linewidth]{subCa_afm_leftedge.png}
         \caption{}%0,46 \SI{0,36}{\nano\metre}
         \label{fig:subCa_afm_edge}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.3\linewidth}
     \centering
-        \includegraphics[width=\linewidth,trim={0cm 12cm 21cm 0cm},clip]{170405Topography028.png}
+        \includegraphics[width=\linewidth]{subCa_afm_upperleftcorner.png}
         \caption{}% 0.54\SI{0,40}{\nano\metre}
         \label{fig:subCa_afm_corner}
     \end{subfigure}
@@ -91,12 +97,19 @@ The low \ac{rms} roughness indicates the absence of deep scratches. The deepest 
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.45\linewidth}
+    \begin{subfigure}[t]{0.4\linewidth}
         \includegraphics[width=\linewidth]{subCa_sem_afm_compare_m010.jpg}
         \caption{}\label{fig:sem-afm-comparison_sem}
     \end{subfigure}%
-    \begin{subfigure}[t]{0.45\linewidth}
-        \includegraphics[width=\linewidth,trim={2.5cm 14.5cm 23cm 1.5cm},clip]{subCa_afm_lysmikrokopi05_afm02.png}
+    \hfill
+    \begin{subfigure}[t]{0.032\linewidth}
+    \centering
+        \includegraphics[width=\linewidth]{subCa_afm_vs_sem_scale.png}
+        \captionsetup{list=no}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.3\linewidth}
+        \includegraphics[width=\linewidth]{subCa_afm_vs_sem.png}
         \caption{}\label{fig:sem-afm-comparison_afm}
     \end{subfigure}%
     \caption[Comparison of an \ac{afm} image with a \ac{sem} image taken at the same location on substrate C.]{Comparison of \subref{fig:sem-afm-comparison_sem} a \ac{sem} image with \subref{fig:sem-afm-comparison_afm} an \ac{afm} image taken at the same location on the as-received substrate C. The height of the features in the \ac{afm} image is displayed as colour gradations. The same location with the same particles can be seen in both the \ac{afm} image and the \ac{sem} image, but due to a too-course tip, an image artifact occur in the \ac{afm} image that makes the particles look wider and longer than they are. The advantage of the \ac{afm} image is that it gives height information.}
