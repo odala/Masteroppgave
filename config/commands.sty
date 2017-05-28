@@ -169,3 +169,30 @@
 % --- Get parentheses around subrefs.
 \let\oldsubref\subref
 \renewcommand{\subref}[1]{(\oldsubref{#1})}
+
+% ===== Table for atomic concentration. =
+\DeclareDocumentCommand{\atomicTable}{ O{&} O{&} O{&} O{&} O{&} O{&} O{&} O{&} O{&} }
+{
+    \small{
+    \begin{subtable}[b]{\linewidth}
+        \centering
+        \begin{tabu} to 1.0\linewidth { | X[1,l] X[3,r] | }
+            \hline
+                        & \textbf{at.\%} \\
+            \hline
+            #1  \\
+            #2  \\
+            #3  \\ 
+            #4  \\
+            #5  \\
+            #6  \\
+            #7  \\
+            #8  \\
+            #9  \\
+              & \\
+            \hline
+        \end{tabu}
+        \captionsetup{list=no}
+    \end{subtable}
+    }
+}
