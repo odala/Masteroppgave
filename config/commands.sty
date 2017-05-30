@@ -156,13 +156,13 @@
 \usepackage{xparse}     % newcommand with multiple optional arguments.
 \DeclareDocumentCommand{\mySubfigure}{ O{} m m o }
 {
-    \begin{subfigure}[t]{#2}
-        \includegraphics[width=\linewidth]{#3}
+    \begin{subfigure}[b]{#2}
         \caption{#1}
+        \includegraphics[width=\linewidth]{#3}
+        
         \IfNoValueTF {#4}
             {            }
             { \label{#4} }
-        
     \end{subfigure}%
 }%\subfigure[<Subcaption>]{\includegraphics[width=<width>]{<figure file>}\label{<label>}}
 
@@ -189,7 +189,7 @@
             #7  \\
             #8  \\
             #9  \\
-              & \\
+%              & \\
             \hline
         \end{tabu}
         \captionsetup{list=no}
