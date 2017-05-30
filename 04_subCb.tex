@@ -14,15 +14,9 @@ The ultimate goal for the \ac{mbe} preparation etch is to provide a clean, smoot
 \Ac{sem} shows the surface at a higher magnification and it reveals that there are much smaller particles distributed over the surface as well. Fig.~\ref{fig:subCb_sem_typical_centre} shows a typical image of an area near the centre of the substrate. Here the particle density is  \SI{1e+07}{\particle\centi\metre^{-2}}. The highest observed density of particles is counted near the upper right corner to be \SI{3e+07}{\particle\centi\metre^{-2}}, see Fig.~\ref{fig:subCb_sem_typical_corner}.
 
 \begin{figure}[htbp]
-    \begin{subfigure}[t]{0.49\textwidth}
-        \includegraphics[width=\linewidth]{subCb_sem_04a_m008.png}
-        \caption{}\label{fig:subCb_sem_typical_centre}
-    \end{subfigure}%
+    \mySubfigure{0.49\textwidth}{subCb_sem_04a_m008.png}[fig:subCb_sem_typical_centre]
     \hfill
-    \begin{subfigure}[t]{0.49\textwidth}
-        \includegraphics[width=\linewidth]{subCb_sem_04a_m005.png}
-        \caption{}\label{fig:subCb_sem_typical_corner}
-    \end{subfigure}%
+    \mySubfigure{0.49\textwidth}{subCb_sem_04a_m005.png}[fig:subCb_sem_typical_corner]
     \caption[\Ac{sem} images of typical areas on substrate C with surface pre-growth preparation.]{\Acf{sem} images of \subref{fig:subCb_sem_typical_centre} a typical area near the centre and \subref{fig:subCb_sem_typical_corner} an area with a high density of particles near the edge of substrate C after surface pre-growth preparation.}\label{fig:subCb_sem_typical}
 \end{figure}
 
@@ -32,6 +26,7 @@ The ultimate goal for the \ac{mbe} preparation etch is to provide a clean, smoot
 \begin{figure}
     \centering
     \begin{subfigure}[t]{\textwidth}
+        \caption{}\label{fig:subCb_silica}
           \begin{minipage}[t]{0.43\linewidth}
             \centering
             \includegraphics[width=\linewidth]{subCb_sem_07_m002.png}
@@ -45,10 +40,10 @@ The ultimate goal for the \ac{mbe} preparation etch is to provide a clean, smoot
             \centering
             \atomicTable[&][&][&]
           \end{minipage}
-        \caption{}\label{fig:subCb_silica}
     \end{subfigure}
     \par\bigskip
     \begin{subfigure}[t]{\textwidth}
+        \caption{}\label{fig:subCb_Br-etch}
           \begin{minipage}[t]{0.43\linewidth}
             \centering
             \includegraphics[width=\linewidth]{subCb_sem_03_m001.png}
@@ -62,10 +57,10 @@ The ultimate goal for the \ac{mbe} preparation etch is to provide a clean, smoot
             \centering
             \atomicTable[&][&][&]
           \end{minipage}
-        \caption{}\label{fig:subCb_Br-etch}
     \end{subfigure}
     \par\bigskip
     \begin{subfigure}[t]{\textwidth}
+        \caption{}\label{fig:subCb_Br-etch2}
           \begin{minipage}[t]{0.43\linewidth}
             \centering
             \includegraphics[width=\linewidth]{subCb_sem_09_m004.png}
@@ -79,7 +74,6 @@ The ultimate goal for the \ac{mbe} preparation etch is to provide a clean, smoot
             \centering
             \atomicTable[&][&][&]
           \end{minipage}
-        \caption{}\label{fig:subCb_Br-etch2}
     \end{subfigure}
     \caption[\Ac{sem} images, \ac{eds} spectra, and \ac{eds} atomic compositions of four different types of particles found on substrate C after surface pre-growth preparation.]{High resolution \acf{sem} images of four different types of particles found on substrate C after surface pre-growth preparation and the corresponding \acf{eds} spectra and atomic compositions: \subref{fig:subCb_silica} Silica (\ce{SiO2}) polishing grit; \subref{fig:subCb_Br-etch} particle with carbon, bromine, nitrogen, and sulphur; \subref{fig:subCb_Br-etch2} particle with carbon, bromine, and oxygen; and \subref{fig:subCb_silica_large} large silica agglomeration.}\label{fig:subCb_sem_w_eds}
 \end{figure}
@@ -88,6 +82,7 @@ The ultimate goal for the \ac{mbe} preparation etch is to provide a clean, smoot
 \ContinuedFloat
     \centering
     \begin{subfigure}[t]{\textwidth}
+        \caption{}\label{fig:subCb_silica_large}
           \begin{minipage}[t]{0.43\linewidth}
             \centering
             \includegraphics[width=\linewidth]{subCb_sem_03_m010.png}
@@ -101,7 +96,6 @@ The ultimate goal for the \ac{mbe} preparation etch is to provide a clean, smoot
             \centering
             \atomicTable[&][&][&]
           \end{minipage}
-        \caption{}\label{fig:subCb_silica_large}
     \end{subfigure}
     \captionsetup{list=no}
     \caption{\emph{(continued)}}
@@ -124,29 +118,16 @@ The ultimate goal for the \ac{mbe} preparation etch is to provide a clean, smoot
 Fig.~\ref{fig:subCb_afm}
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.032\linewidth}
-    \centering
+    \begin{subfigure}[b]{0.032\linewidth}
+        \label{fig:subCb_afm_scale}\captionsetup{list=no}
         \includegraphics[width=\linewidth]{subCb_afm_scale.png}
-        \captionsetup{list=no}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[t]{0.3\linewidth}
-    \centering
-        \includegraphics[width=\linewidth]{subCb_afm_centre.png}
-        \caption{}\label{fig:subCb_afm_centre}  %\SI{0.85}{\nano\metre}}
-    \end{subfigure}%
+    \mySubfigure{0.3\linewidth}{subCb_afm_centre.png}[fig:subCb_afm_centre]  %\SI{0.85}{\nano\metre}}
     \hfill
-    \begin{subfigure}[t]{0.3\linewidth}
-    \centering
-        \includegraphics[width=\linewidth]{subCb_afm_upperedge.png}
-        \caption{}\label{fig:subCb_afm_edge}  %\SI{0.77}{\nano\metre}}
-    \end{subfigure}%
+    \mySubfigure{0.3\linewidth}{subCb_afm_upperedge.png}[fig:subCb_afm_edge]  %\SI{0.77}{\nano\metre}}
     \hfill
-    \begin{subfigure}[t]{0.3\linewidth}
-    \centering
-        \includegraphics[width=\linewidth]{subCb_afm_upperleftcorner.png}
-        \caption{}\label{fig:subCb_afm_corner}  %\SI{1,04}{\nano\metre}}
-    \end{subfigure}%
+    \mySubfigure{0.3\linewidth}{subCb_afm_upperleftcorner.png}[fig:subCb_afm_corner]  %\SI{1,04}{\nano\metre}}
     \caption[\Ac{afm} of substrate C with surface pre-growth preparation.]{\Acf{afm} measurements of substrate C with surface pre-growth preparation. Images of $\SI{5}{\micro\metre}\times\SI{5}{\micro\metre}$ areas are taken at three different locations on the substrate surface: \subref{fig:subCb_afm_centre} near the centre, \ac{rms} roughness \SI{1.4}{\nano\metre}; \subref{fig:subCb_afm_edge} near the upper edge, \ac{rms} roughness \SI{1.4}{\nano\metre}; and \subref{fig:subCb_afm_corner} near the upper left corner, \ac{rms} roughness \SI{2.8}{\nano\metre}.}
     \label{fig:subCb_afm}
 \end{figure} % AFM, substrate C, with surface pre-growth preparation.

@@ -35,6 +35,7 @@ An \ac{eds} spectrum of one of the particles reveals that the piece is composed 
 \begin{figure}
     \centering
     \begin{subfigure}[t]{\textwidth}
+        \caption{}\label{fig:subCa_polishing-grit}
           \begin{minipage}[t]{0.43\linewidth}
             \centering
             \includegraphics[width=\linewidth]{subCa_sem_09_m010.jpg}
@@ -48,7 +49,6 @@ An \ac{eds} spectrum of one of the particles reveals that the piece is composed 
             \centering
             \atomicTable[&][&][&]
           \end{minipage}
-        \caption{}\label{fig:subCa_polishing-grit}
     \end{subfigure}%
     \caption[\Ac{sem} images, \ac{eds} spectra, and \ac{eds} atomic compositions of \todo{one} different types of particles found on as-received substrate C.]{High resolution \acf{sem} images of \todo{one} different types of particles found on the as-received substrate C and the corresponding \acf{eds} spectra and atomic compositions: \subref{fig:subCa_polishing-grit} silica (\ce{SiO2}), the blue spectrum represents the measurements from the particles, while the pink spectrum represents the substrate surface next to the particles.}\label{fig:subCa_sem_w_eds}
 \end{figure}
@@ -64,32 +64,16 @@ Fig.~\ref{fig:sem-afm-comparison} show a comparison of an \ac{afm} image with a 
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.032\linewidth}
-    \centering
+    \begin{subfigure}[b]{0.032\linewidth}
+        \label{fig:subBa_afm_scale}\captionsetup{list=no}
         \includegraphics[width=\linewidth]{subCa_afm_scale.png}
-        \captionsetup{list=no}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[t]{0.3\linewidth}
-    \centering
-        \includegraphics[width=\linewidth]{subCa_afm_centre.png}
-        \caption{}%0,33\SI{0,28}{\nano\metre}
-        \label{fig:subCa_afm_centre}
-    \end{subfigure}
+    \mySubfigure{0.3\linewidth}{subCa_afm_centre.png}[fig:subCa_afm_centre]%0,33\SI{0,28}{\nano\metre}
     \hfill
-    \begin{subfigure}[t]{0.3\linewidth}
-    \centering
-        \includegraphics[width=\linewidth]{subCa_afm_leftedge.png}
-        \caption{}%0,46 \SI{0,36}{\nano\metre}
-        \label{fig:subCa_afm_edge}
-    \end{subfigure}
+    \mySubfigure{0.3\linewidth}{subCa_afm_leftedge.png}[fig:subCa_afm_edge]%0,46 \SI{0,36}{\nano\metre}
     \hfill
-    \begin{subfigure}[t]{0.3\linewidth}
-    \centering
-        \includegraphics[width=\linewidth]{subCa_afm_upperleftcorner.png}
-        \caption{}% 0.54\SI{0,40}{\nano\metre}
-        \label{fig:subCa_afm_corner}
-    \end{subfigure}
+    \mySubfigure{0.3\linewidth}{subCa_afm_upperleftcorner.png}[fig:subCa_afm_corner]% 0.54\SI{0,40}{\nano\metre}
     \caption[\Ac{afm} of as-received substrate C.]{\Acf{afm} measurements of the as-received substrate C. Images of $\SI{5}{\micro\metre}\times\SI{5}{\micro\metre}$ areas are taken at three different locations on the substrate surface: \subref{fig:subCa_afm_centre} near the centre, \ac{rms} roughness \SI{0.95}{\nano\metre}; \subref{fig:subCa_afm_edge} near the left edge, \ac{rms} roughness \SI{1.4}{\nano\metre}; and \subref{fig:subCa_afm_corner} near the upper left corner, \ac{rms} roughness \SI{1.4}{\nano\metre}.}
     \label{fig:subCa_afm}
 \end{figure} % AFM, substrate C, as-received.
@@ -101,21 +85,14 @@ The low \ac{rms} roughness indicates the absence of deep scratches. The deepest 
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.5\linewidth}
-        \includegraphics[width=\linewidth]{subCa_sem_afm_compare_m010.jpg}
-        \caption{}\label{fig:sem-afm-comparison_sem}
-    \end{subfigure}%
+    \mySubfigure{0.5\linewidth}{subCa_sem_afm_compare_m010.jpg}[fig:sem-afm-comparison_sem]
     \hfill\hfill
-    \begin{subfigure}[t]{0.04\linewidth}
-    \centering
+    \begin{subfigure}[b]{0.04\linewidth}
+        \label{fig:subCa_afm_vs_sem_scale}\captionsetup{list=no}
         \includegraphics[width=\linewidth]{subCa_afm_vs_sem_scale.png}
-        \captionsetup{list=no}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[t]{0.375\linewidth}
-        \includegraphics[width=\linewidth]{subCa_afm_vs_sem.png}
-        \caption{}\label{fig:sem-afm-comparison_afm}
-    \end{subfigure}%
+    \mySubfigure{0.375\linewidth}{subCa_afm_vs_sem.png}[fig:sem-afm-comparison_afm]
     \caption[Comparison of an \ac{afm} image with a \ac{sem} image taken at the same location on substrate C.]{Comparison of \subref{fig:sem-afm-comparison_sem} a \ac{sem} image with \subref{fig:sem-afm-comparison_afm} an \ac{afm} image taken at the same location on the as-received substrate C. The height of the features in the \ac{afm} image is displayed as colour gradations. The same location with the same particles can be seen in both the \ac{afm} image and the \ac{sem} image, but due to a too-course tip, an image artifact occur in the \ac{afm} image that makes the particles look wider and longer than they are. The advantage of the \ac{afm} image is that it gives height information.}
     \label{fig:sem-afm-comparison}
 \end{figure}
@@ -166,15 +143,9 @@ Near-\ac{ir} transmission microscopy images of as-received substrate C show a st
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.60175438596\linewidth}
-        \includegraphics[width=\linewidth]{subCa_25_ftir_spectra.png}
-        \caption{}\label{fig:subCa_ftir_spectra}
-    \end{subfigure}
+    \mySubfigure{0.60175438596\linewidth}{subCa_25_ftir_spectra.png}[fig:subCa_ftir_spectra]
     \hfill
-    \begin{subfigure}[t]{0.37824561403\linewidth}
-        \includegraphics[width=\linewidth]{subCa_25_ftir_transmission_at_k500cm-1.png}
-        \caption{}\label{fig:subCa_ftir_map_500cm-1}
-    \end{subfigure}
+    \mySubfigure{0.37824561403\linewidth}{subCa_25_ftir_transmission_at_k500cm-1.png}[fig:subCa_ftir_map_500cm-1]
     \caption[\Ac{ftir} measurements of the as-received substrate C.]{\Acf{ftir} measurements recorded from a $5\times5$ grid on the as-received $\SI{15}{\milli\metre}\times\SI{15}{\milli\metre}$ (211)B-oriented substrate C: \subref{fig:subCa_ftir_spectra} Transmission spectra; and \subref{fig:subCa_ftir_map_500cm-1} transmission map at wavenumber $k=\SI{500}{\centi\metre^{-1}}$ showing the transmittance $T$ in percentage of incoming light that is transmitted through at each grid point. The spikes near $k=\SI{4500}{\centi\metre^{-1}}$ and $k=\SI{5000}{\centi\metre^{-1}}$ are an artefact of the \ac{ftir} instrument and should not be considered.}
 \end{figure}
 
