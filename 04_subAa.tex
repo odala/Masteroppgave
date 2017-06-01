@@ -10,9 +10,9 @@ In previous work \citep{lauten2017characterisation}, the state-of-the-art as-rec
     \centering
     \mySubfigure{\linewidth}{LM_DF_BZ1503ID71A_M005_centre.jpg}[fig:subAa_om_df_centre]
     \par\bigskip
-    \mySubfigure{0.49\textwidth}{LM_DF_BZ1503ID71A_M005_edge.jpg}[fig:subAa_om_df_edge]
+    \mySubfigure{0.50\textwidth}{LM_DF_BZ1503ID71A_M005_edge.jpg}[fig:subAa_om_df_edge]
     \hfill
-    \mySubfigure{0.49\textwidth}{LM_DF_BZ1503ID71A_M005_corner_with_skraa.jpg}[fig:subAa_om_df_corner]
+    \mySubfigure{0.48\textwidth}{LM_DF_BZ1503ID71A_M005_corner_with_skraa.jpg}[fig:subAa_om_df_corner]
     \caption[Dark field images of substrate A.]{Dark field images of substrate A captured through the optical microscope Leica DM RXA2 at three different locations on the substrate surface: \subref{fig:subAa_om_df_centre} Centre; \subref{fig:subAa_om_df_edge} edge; and \subref{fig:subAa_om_df_corner} corner.}
     \label{fig:subAa_om_df}
 \end{figure}
@@ -140,7 +140,7 @@ There are observed particles with sharp edges and sizes \SI{>5}{\micro\metre} in
 %%=========================================
 
 \subsection{Surface Scratches and Roughness}
-The as-received surface of substrate A was carefully polished by the vendor and the typical surface scratches are between \SI{10} and {}\SI{20}{\nano\metre} wide, as seen in Fig.~\ref{fig:subAa_scratches}. The surface scratches most likely have shallow depth since they cannot be seen in the dark field images of substrate A.
+The as-received surface of substrate A was carefully polished by the vendor, as seen in Fig.~\ref{fig:subAa_scratches}. The surface scratches most likely have shallow depth since they cannot be seen in the dark field images of substrate A, see Fig.~\ref{fig:subAa_om_df}.
 
 \begin{figure}[htbp]
     \centering
@@ -151,7 +151,7 @@ The as-received surface of substrate A was carefully polished by the vendor and 
     \label{fig:SEM_A_surface}
 \end{figure}
 
-The as-received substrate A was characterised for surface topography by \ac{afm}. Fig.~\ref{fig:subAa_afm} show \ac{afm} images of the surface. The \ac{rms} roughness of substrate A is \SI{\sim0.3}{\nano\metre} at both the centre and around the edges. This indicates the absence of large scratches. The largest polishing scratches on substrate A are \SI{0.2}{\micro\metre} wide and \SI{1}{\nano\metre} deep.
+The as-received substrate A was characterised for surface topography by \ac{afm}. Images of $\SI{5}{\micro\metre}\times\SI{5}{\micro\metre}$ areas were taken at three different locations on the substrate surface: near the centre, near the upper edge, and near the upper left corner, as seen in Fig.~\ref{fig:subAa_afm}. The \ac{rms} roughness of substrate A is \SI{\sim0.3}{\nano\metre} at both the centre and around the edges, while it is slightly higher at the corner with \iac{rms} roughness of \SI{\sim0.4}{\nano\metre}. This indicates the absence of large scratches. The typical surface scratches are between \SIrange{10}{20}{\nano\metre} wide and \SI{1}{\nano\metre} deep. While the largest polishing scratches are \SI{0.2}{\micro\metre} wide and \SI{5}{\nano\metre} deep.
 
 \begin{figure}[htbp]
     \centering
@@ -204,9 +204,9 @@ The atomic concentrations were calculated using Eq.~\eqref{eq:xps_concentration}
 
 %%=========================================
 % EDS-analysis
-Since the \ac{xps} equipment did not detect small concentrations of elements, \ac{eds} was used to get a quantitative analysis of the chemical composition of the substrate. The spectra were taken using an accelerating voltage of \SI{10.0}{\kilo\volt}, an extraction voltage of \SI{2.00}{\kilo\volt}, a large probe current, and the live acquisition time was set to \SI{1200}{\second} to get good statistics. \todo{Why these parameters?} The results from the as-received substrate A can be seen in Table~\ref{tab:subAa_eds_analysis}. 
+Since the \ac{xps} equipment did not detect small concentrations of elements, \ac{eds} was used to get a quantitative analysis of the chemical composition of the substrate. The spectra were taken using an accelerating voltage of \SI{10.0}{\kilo\volt} to ensure the peaks of interest, a large probe current to maximise the throughput, and a live acquisition time of \SI{1200}{\second} to get good statistics (less noise). The results from the as-received substrate A can be seen in Table~\ref{tab:subAa_eds_analysis}. %an extraction voltage of \SI{2.00}{\kilo\volt} to get 
 
-The electron interaction depth was calculated by the Quantax software to be \SI{0.4}{\micro\metre}. That means that characteristic X-rays from elements as far in as \SI{0.4}{\micro\metre} below the surface were detected. In comparison, the \ac{xps} detects the electrons that escape from the outermost \SI{\sim10}{\nano\metre}. Hence, \ac{eds} is not as surface sensitive and more than just the top surface layer is probed. This is part of the reason for the difference in the atomic concentrations between the \ac{xps} and \ac{eds} results for substrate A. The observed silica and alumina particles have a diameter of about \SI{50}{\nano\metre}. Hence, one monolayer of these would only cover \SI{12.5}{\percent} of the interaction volume\todo{, but more of the signal}.
+The electron interaction depth was calculated by the Quantax software to be \SI{0.4}{\micro\metre}. That means that characteristic X-rays from elements as far in as \SI{0.4}{\micro\metre} below the surface were detected. In comparison, the \ac{xps} detects the electrons that escape from the outermost \SI{\sim10}{\nano\metre}. Hence, \ac{eds} is not as surface sensitive and more than just the top surface layer is probed. This is part of the reason for the difference in the atomic concentrations between the \ac{xps} and \ac{eds} results for substrate A. The observed silica and alumina particles have a diameter of about \SI{50}{\nano\metre}. Hence, one monolayer of these would cover \SI{\sim12.5}{\percent} of the interaction volume, but more of the signal.
 
 \begin{table}[htbp]
     \centering
@@ -222,7 +222,7 @@ The electron interaction depth was calculated by the Quantax software to be \SI{
     \end{tabu}
 \end{table}
 
-The \ac{eds} surface analysis identified the following elements: \ce{Cd}, \ce{Te}, \ce{Zn}, \ce{Al}, \ce{Si}, \ce{C}, and \ce{O}. The relative concentrations of \ce{Cd}, \ce{Zn}, and \ce{Te} had an error of less than one percentage point from the expected value of \SI{48}{\atomic\percent} cadmium, \SI{2}{\atomic\percent} zinc and \SI{50}{\atomic\percent} tellurium. %Substrate A had a smaller atomic concentration of \ce{O} than substrate B, which indicates that the tellurium oxide layer on substrate A was thinner than that on substrate B. The \ce{Al} and \ce{Si} contamination found in the \ac{eds} analysis for both substrate A and substrate B was coming from residual \ce{Al2O3} and \ce{SiO2} polishing grit respectively.
+The \ac{eds} surface analysis identified the following elements: \ce{Cd}, \ce{Te}, \ce{Zn}, \ce{Al}, \ce{Si}, \ce{C}, and \ce{O}. The relative concentrations of \ce{Cd}, \ce{Zn}, and \ce{Te} had an error of less than one percentage point from the expected value of \SI{48}{\atomic\percent} cadmium, \SI{2}{\atomic\percent} zinc and \SI{50}{\atomic\percent} tellurium. There are detected silicon and alumina near the centre as well as near the edges and corners. This indicate that it is polishing grit in the centre as well. %\todo{Kan du si noe om density ut fra dette?}%Substrate A had a smaller atomic concentration of \ce{O} than substrate B, which indicates that the tellurium oxide layer on substrate A was thinner than that on substrate B. The \ce{Al} and \ce{Si} contamination found in the \ac{eds} analysis for both substrate A and substrate B was coming from residual \ce{Al2O3} and \ce{SiO2} polishing grit respectively.
 %%========================================
 % FTIR transmission spectra.
 \subsection{IR Characterisation}
@@ -237,7 +237,7 @@ The \ac{eds} surface analysis identified the following elements: \ce{Cd}, \ce{Te
     \caption[\Ac{ftir} measurements of the as-received substrate A.]{\Ac{ftir} measurements recorded from a $11\times11$ grid on the as-received $\SI{30}{\milli\metre}\times\SI{30}{\milli\metre}$ (111)B-oriented substrate A: \subref{fig:subAa_ftir_spectra} Transmission spectra; \subref{fig:subAa_ftir_map_500cm-1} transmission map at wavenumber $k=\SI{500}{\centi\metre^{-1}}$ showing the transmittance $T$ in percentage of incoming light that is transmitted through at each grid point. The spikes near $k=\SI{4500}{\centi\metre^{-1}}$ and $k=\SI{5000}{\centi\metre^{-1}}$ are an artefact of the \ac{ftir} instrument and should not be considered.}
 \end{figure}
 
-The two factors that are mainly responsible for the reduction in \ac{ir} transmittance of \ac{czt} are the free carrier absorption and the scattering effect of precipitates \citep{yadava1994precipitation}. \citet{yujie2004infrared} used the transmittance at the wavenumber of $\SI{1000}{\centi\metre^{-1}}$ $T_{1000}$, the transmittance at the wavenumber of $\SI{5000}{\centi\metre^{-1}}$ $T_{5000}$, and the ratio of $T_{1000}$ to $T_{5000}$ to determine which of these two mechanisms that are the most significant. Their analysis gives a qualitatively determination of the density and size of \ce{Te} precipitates, the free carrier concentration, and the resistivity for \ac{czt} substrates. %\todo{Espen: Dislokasjoner og ruhet vil også senke transmisjon.}
+The two factors that are mainly responsible for the reduction in \ac{ir} transmittance of \ac{czt} are the free carrier absorption and the scattering effect of precipitates \citep{yadava1994precipitation}. \citet{yujie2004infrared} used the transmittance at the wavenumber of $\SI{1000}{\centi\metre^{-1}}$ $T_{1000}$, the transmittance at the wavenumber of $\SI{5000}{\centi\metre^{-1}}$ $T_{5000}$, and the ratio of $T_{1000}$ to $T_{5000}$ to determine which of these two mechanisms that are the most significant. Their analysis gives a qualitative determination of the density and size of \ce{Te} precipitates, the free carrier concentration, and the resistivity for \ac{czt} substrates. %\todo{Espen: Dislokasjoner og ruhet vil også senke transmisjon.}
 
-Almost all the spectra from substrate A had a value of $T_{5000}$ between \SI{63}{\percent} and \SI{67}{\percent}, $T_{1000}$ between \SI{62}{\percent} and \SI{64}{\percent}, and $T_{1000}/T_{5000}$ approaches one from below. According to \citet{yujie2004infrared}, the \ac{czt} substrates with these characteristics are free of precipitates, have low free carrier concentration, and have resistivity that exceeds \SI{e6}{\ohm\centi\metre}.
+Almost all the spectra from substrate A had a value of $T_{5000}$ between \SI{63}{\percent} and \SI{67}{\percent}, $T_{1000}$ between \SI{62}{\percent} and \SI{64}{\percent}, and $T_{1000}/T_{5000}$ approaches one from below. According to \citet{yujie2004infrared}, the \ac{czt} substrates with these characteristics are free of precipitates, have low free carrier concentration, and have resistivity that exceeds \SI{e6}{\ohm\centi\metre}.%\todo{Why?}
 %%========================================
