@@ -154,12 +154,11 @@
 
 % ===== Subfigure =================
 \usepackage{xparse}     % newcommand with multiple optional arguments.
-\DeclareDocumentCommand{\mySubfigure}{ O{} m m o }
+\DeclareDocumentCommand{\mySubfigure}{ O{} m m o O{}}
 {
     \begin{subfigure}[b]{#2}
         \caption{#1}
-        \includegraphics[width=\linewidth]{#3}
-        
+        \includegraphics[width=\linewidth, #5]{#3}
         \IfNoValueTF {#4}
             {            }
             { \label{#4} }
