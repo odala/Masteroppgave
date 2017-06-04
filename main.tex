@@ -46,8 +46,11 @@
 % List of figures [optional]
 \listoffigures
 
+
 % List of tables [optional]
+\begingroup\let\clearpage\relax  % Print list of tables on same page as list of figures
 \listoftables
+\endgroup
 
 % List of acronyms and abbreviations (symbols, and notation) [optional]
 \printacronyms[heading=chapter, name=List of Acronyms, include-classes = {acro}, sort=true]
