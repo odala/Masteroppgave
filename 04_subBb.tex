@@ -23,12 +23,12 @@ As substrate B was roughly polished by the vendor, the surface pre-growth prepar
     \mySubfigure{0.49\textwidth}{subBb_sem_05a_m014.png}[fig:subBb_sem_typical_centre]
     \hfill
     \mySubfigure{0.49\textwidth}{subB2b_sem_02b_m004.png}[fig:subB2b_sem_typical_centre]
-    \caption[\Ac{sem} images of typical areas on substrate B and B2 with surface pre-growth preparation.]{\Ac{sem} images of a typical area near the centre of \subref{fig:subBb_sem_typical_centre} substrate B and \subref{fig:subB2b_sem_typical_centre} substrate B2 after surface pre-growth preparation. \todo{Helt svart x2}}\label{fig:subBb_and_subB2b_sem_typical}
+    \caption[\Ac{sem} images of typical areas on substrate B and B2 with surface pre-growth preparation.]{\Ac{sem} images of a typical area near the centre of \subref{fig:subBb_sem_typical_centre} substrate B and \subref{fig:subB2b_sem_typical_centre} substrate B2 after surface pre-growth preparation.}\label{fig:subBb_and_subB2b_sem_typical}
 \end{figure}
 
 %%=========================================
 % Twin boundaries.
-Four twin boundaries are visible to the naked eye after polish and etch. Two in the upper left corner and two that span from the lower right corner to the middle of the upper edge, see Fig.~\ref{fig:subBb_twins_illustration}. By doing an \todo{spør Espen om navn på etch} etch it was established that the area between the lines in the upper left corner and between the two other lines were (111)B-oriented, while the surrounding area were twins. A part of the twin boundary near the upper left corner can be seen in Fig.~\ref{fig:subBb_sem_twins}. It forms a piecewise straight line with steps that change the direction by \SI{\pm 45}{\degree} every \SIrange{10}{200}{\micro\metre}.
+Four twin boundaries are visible to the naked eye after polish and etch. Two in the upper left corner and two that span from the lower right corner to the middle of the upper edge, see Fig.~\ref{fig:subBb_twins_illustration}. By doing an \todo{Everson} etch it was established that the area between the lines in the upper left corner and between the two other lines were (111)B-oriented, while the surrounding area were twins. A part of the twin boundary near the upper left corner can be seen in Fig.~\ref{fig:subBb_sem_twins}. It forms a piecewise straight line with steps that change the direction by \SI{\pm 45}{\degree} every \SIrange{10}{200}{\micro\metre}.
 
 \citet{ashida2015crystallographic} studied the dependence of \ac{sem} contrast on crystallographic orientation in \ce{SiC} polytypes. They found that features look brighter when the direction of the incident electron beam is almost parallel to the topmost stacking sequence direction. However, the formation mechanism of the \ac{sem} contrast is still under discussion. This could explain why there is a visible contrast at the twin boundaries.
 
@@ -40,7 +40,7 @@ Four twin boundaries are visible to the naked eye after polish and etch. Two in 
         \begin{tikzpicture}[remember picture]
           \node[anchor=south west,inner sep=0] (imageA) {\includegraphics[width=\linewidth]{subBb_twins.png}};
           \begin{scope}[x={(imageA.south west)},y={(imageA.north east)}]
-            \node[coordinate] (A) at (0.1\linewidth, 0.9\linewidth) {};
+            \node[coordinate] (A) at (0.033\linewidth, 0.967\linewidth) {};
           \end{scope}
         \end{tikzpicture}
     \end{subfigure}
@@ -56,11 +56,11 @@ Four twin boundaries are visible to the naked eye after polish and etch. Two in 
         \end{tikzpicture}
     \end{subfigure}
     \caption[Twin boundaries on substrate B.]{\subref{fig:subBb_twins_illustration} Illustration of the location of twin boundaries on substrate B and \subref{fig:subBb_sem_twins} \iac{sem} image of the twin boundary near the upper left corner.}\label{fig:subBb_twin_boundaries}
+    % Draw arrow.
+    \begin{tikzpicture}[remember picture,overlay]
+      \draw[->, red, line width=0.5mm ] (B) -- (A);
+    \end{tikzpicture}
 \end{figure}
-% Draw arrow.
-\begin{tikzpicture}[remember picture,overlay]
-  \draw[->, red, line width=0.5mm ] (B) -- (A);
-\end{tikzpicture}
 
 %%=========================================
 \subsection{Particles}
