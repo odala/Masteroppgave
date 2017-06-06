@@ -10,7 +10,7 @@
 %    \sectionmark{Surface Analysis of Pre-Growth Substrate A}}\sectionmark{Surface Analysis of Pre-Growth Substrate A}\label{sec:subAb}
     
 \section{Surface Analysis of Substrate A after Etching}
-As substrate A was already polished by the vendor, the surface pre-growth preparation consisted of simply a \ce{Br}:methanol etch. The dark field images taken of substrate A after etching show that the etch has left more particles on the surface than before, see Fig.~\ref{fig:subAa_om_df} and Fig.~\ref{fig:subAb_om_df}. The density of particles and features larger than \SI{0.5}{\micro\metre} has increased from \SI{\sim 4e2}{\centi\metre^{-2}} to \SI{\sim 1e3}{\centi\metre^{-2}} near the centre of the substrate. %\todo{Bare etsing får til flere partikler? Hvor kommer de fra? Løsnet fra kantene og løst seg i esevæsken for så å falle ned. settle on the substrate surface. }
+As substrate A was already polished by the vendor, the surface pre-growth preparation simply consisted of a \ce{Br}:methanol etch. The dark field images taken of substrate A after etching show that the etch has left more particles on the surface than before, see Fig.~\ref{fig:subAa_om_df} and Fig.~\ref{fig:subAb_om_df}. The density of particles and features larger than \SI{0.5}{\micro\metre} has increased from \SI{\sim 4e2}{\centi\metre^{-2}} to \SI{\sim 1e3}{\centi\metre^{-2}} near the centre of the substrate. %\todo{Bare etsing får til flere partikler? Hvor kommer de fra? Løsnet fra kantene og løst seg i esevæsken for så å falle ned. settle on the substrate surface. }
 
 \begin{figure}[htbp]
     \centering
@@ -46,7 +46,7 @@ Four different types of particles were found on the surface of substrate A after
           \end{minipage}
           \begin{minipage}[t]{0.11\linewidth}
             \centering
-            \atomicTable[&][&][&]
+            \atomicTable[\ce{Te}&\SI{39.21}{}][\ce{Cd}&\SI{37.98}{}][\ce{O}&\SI{11.45}{}][\ce{Si}&\SI{5.74}{}][\ce{C}&\SI{4.19}{}][\ce{Zn}&\SI{1.42}{}]%OK
           \end{minipage}
     \end{subfigure}
     \par\bigskip
@@ -63,7 +63,7 @@ Four different types of particles were found on the surface of substrate A after
           \end{minipage}
           \begin{minipage}[t]{0.11\linewidth}
             \centering
-            \atomicTable[&][&][&]
+            \atomicTable[\ce{Te}&\SI{32.56}{}][\ce{Cd}&\SI{32.17}{}][\ce{O}&\SI{20.07}{}][\ce{Si}&\SI{11.13}{}][\ce{C}&\SI{3.00}{}][\ce{Zn}&\SI{1.07}{}]%OK
           \end{minipage}
     \end{subfigure}
     \par\bigskip
@@ -118,7 +118,7 @@ The silica polishing grit observed in \ac{sem} are found all over the surface. T
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\linewidth]{subAb_densityData.png}
-    \caption[Map of the polishing grit density on substrate A after a \ce{Br}:methanol etch.]{A map of the polishing grit density at 36 different locations on the $\SI{30}{\milli\metre}\times\SI{30}{\milli\metre}$ substrate A after a \ce{Br}:methanol etch. The polishing grit density was observed to vary between \SI{2e+06}{\centi\metre^{-2}} and \SI{3e+07}{\centi\metre^{-2}}.}
+    \caption[Map of the polishing grit density on substrate A after a \ce{Br}:methanol etch.]{A map of the polishing grit density at 36 different locations on the $\SI{30}{\milli\metre}\times\SI{30}{\milli\metre}$ substrate A after a \ce{Br}:methanol etch. The density measurements were obtained by counting the number of polishing grits in \ac{sem} images covering $\SI{25.4}{\micro\metre}\times\SI{17.8}{\micro\metre}$ areas. In total, \SI{0.002}{\percent} of the substrate surface was measured. The polishing grit density was observed to vary between \SI{2e+06}{\centi\metre^{-2}} and \SI{3e+07}{\centi\metre^{-2}}.}
     \label{fig:subAb_densityData}
 \end{figure}
 
@@ -138,7 +138,7 @@ Fig.~\ref{fig:subAb_br-stain} shows a stain that consists of bromine, carbon, an
 %\section{AFM Study of Etched Substrate A}
 \subsection{Surface Roughness}
 
-The \ce{Br}:methanol etched substrate A was characterised for surface topography by \ac{afm}. Images of $\SI{5}{\micro\metre}\times\SI{5}{\micro\metre}$ areas were taken at three different locations on the substrate surface: near the centre, near the upper edge, and near the upper left corner, as seen in Fig.~\ref{fig:subAb_afm}. The \ac{rms} roughness was calculated using Eq.~\ref{eq:rmsroughness} to be \SI{0.51}{\nano\metre}, \SI{1.3}{\nano\metre}, and \SI{1.9}{\nano\metre} respectively. This is an increase in roughness by 2 near the centre, 4 near the edge, and 6 near the corner. The centre has a flat surface with particles with sizes between \SIrange{10}{50}{\nano\metre}, while the edge and corner have a pebbled surface, which makes it hard to see the presence of particles, as seen in Fig.~\ref{fig:subAb_afm_edge}--\oldsubref{fig:subAb_afm_corner}. The surface scratches from before the etch has disappeared, but the presence of polishing particles have increased the roughness of the surface.
+The \ce{Br}:methanol etched substrate A was characterised for surface topography by \ac{afm}. Images of $\SI{5}{\micro\metre}\times\SI{5}{\micro\metre}$ areas were taken at three different locations on the substrate surface: near the centre, near the upper edge, and near the upper left corner, as seen in Fig.~\ref{fig:subAb_afm}. The \ac{rms} roughness was calculated to be \SI{0.51}{\nano\metre}, \SI{1.3}{\nano\metre}, and \SI{1.9}{\nano\metre}, respectively, using Eq.~\ref{eq:rmsroughness}. This was an increase in roughness by 2 near the centre, 4 near the edge, and 6 near the corner. The centre had a flat surface with particles with size between \SIrange{10}{50}{\nano\metre}, while the edge and corner had a pebbled surface, which made it difficult to see the presence of particles, as seen in Fig.~\ref{fig:subAb_afm_edge}--\oldsubref{fig:subAb_afm_corner}. The surface scratches from before the etch has disappeared, but the presence of polishing particles have increased the roughness of the surface.
 
 \begin{figure}[htbp]
     \centering
