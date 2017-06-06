@@ -68,7 +68,8 @@
     \sisetup{exponent-product = \cdot}              % Prikk som multiplikasjonstegn (i steden for kryss).
     \sisetup{output-product = \cdot} 
  	\sisetup{output-decimal-marker  =  {.}}         % Komma som desimalskilletegn for norsk, punktum for engelsk.
- 	\sisetup{range-phrase=--, range-units=single}   % Set the range phrase to -- when using \SIrange{1}{2}{\metre} gives 1-2 m
+ 	\sisetup{range-phrase=--}   % Set the range phrase to -- when using \SIrange{1}{2}{\metre} gives 1-2 m
+ 	%\sisetup{range-units=single}  % Have only one unit in range, e.g. \SIrange{1}{2}{\metre} -> 1 -- 2 m instead of 1 m -- 2 m.
  	\sisetup{math-micro=\text{µ},text-micro=µ}      % Bug-fix
  	\sisetup{math-ohm=\Omega,text-ohm=\Omega}       % Bug-fix
 \usepackage{esint}                                  % To get double circle integral: \oiint
