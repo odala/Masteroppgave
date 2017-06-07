@@ -227,14 +227,11 @@ As the mirror moves continuously from an \ac{opd} of zero to a distance further 
 %
 %The band gap of a material can be identified where the transmission increases steeply with wavelength. This increase in transmission happens because photons with energy greater than the band gap can be absorbed by creating an electron-hole pair, while photons with energy less than the band gap cannot create an electron-hole pair and are transmitted.
 %
-%I tilfellet der en tynnfilm ligger på overflaten av et annet materiale, vil både toppflaten og bunnflaten av tynnfilmen reflektere lys. Den totale refleksjonen vil være summen av disse to refleksjonene. Refleksjonen kan adderes konstruktivt eller destruktivt avhengig av faseforskjellen strålene får på grunn av ulik optisk veilengde. Dette vil føre til økt refleksjon når veilengdeforskjellen tilsvarer ett helt antall bølgelengder
-%\begin{equation}
-%2d=m\lambda_2,
-%\end{equation}
-%der $d$ er tykkelsen på tynnfilmen, $m\in\mathbb{N}$ og $\lambda_2$ er bølgelengden inne i tynnfilmen gitt ved $\lambda_2=\lambda_1/n$, hvor $\lambda_1$ er bølgelengden på den innkommende strålen og $n$ er brytningsideksen til tynnfilmen. Minimum for refleksjon vil finne sted når $2d=(m+\frac{1}{2})\lambda_2$. Dermed kan interferensmønsteret, frynsene i spekteret, bli brukt for å bestemme tykkelsen av tynnfilmen
-%\begin{equation}\label{eq:frynseeffekt}
-%d = \frac{1}{2}\frac{1}{n\Delta k},
-%\end{equation}
-%hvor $n$ er brytningsideksen og $\Delta k$ er perioden for én slik frynse i frynseborden.
+The thickness of a thin film on top of another material can be calculated from the \ac{ftir} spectrum. Both the surface of the film and the boundary between the film and the underlying material reflect the incoming beam of photons. Resulting in a fringing effect, which originate from constructive and destructive interference of the light, where the maxima are found at optical path difference equals an even number of wavelengths. Hence, the fringes in the spectrum can be used to determine the thickness of the film
+\begin{equation}
+\label{eq:ftir_thickness}
+d = \frac{1}{2}\frac{1}{n\Delta k},
+\end{equation}
+where $n$ is the refractive index and $\Delta k$ is the average period for one fringe \citep{griffiths2007fourier, stuart2008modern}.
 %
 %%=========================================
