@@ -9,7 +9,7 @@ In order to describe the physical and chemical properties of a material, it is i
 %%=========================================
 \section{Optical Microscopy}
 
-The optical microscope uses visible light and optical lenses to magnify images of small features. There are different illumination techniques that can be used to increase the contrast from the sample. One of these techniques is bright field microscopy, where the scattered beam is excluded from the image and the contrast in the image comes from the absorption of light in the sample. A complementary technique is dark field microscopy, in which the unscattered beam is excluded and it is the scattered light that forms the image.
+The optical microscope uses visible light and optical lenses to magnify images of small features. There are different illumination techniques that can be used to increase the contrast from the sample. One of these techniques is bright field microscopy, where the scattered beam is excluded from the image and the contrast in the image comes from the absorption of light in the sample. A complementary technique is dark field microscopy, in which the unscattered beam is excluded and it is the scattered light that forms the image. A third optical microscopy technique used to enhance the contrast, is Nomarski microscopy, which utilises the optical path length of the sample to see otherwise invisible features.
 
 Even if all optical aberrations in the lens system are assumed to be negligible, i.e. a perfect lens, there will be a limit to how small details that can be resolved due to interference and diffraction of the light that passes through the system. Resolution is defined as the minimum distance between two points at which they can be distinguished. For two point sources surrounded by Airy discs of diffracted light, this minimum distance is at which the principal maximum of one source coincides with the first minimum of the second source. If the sources have equal wavelength, then the Airy discs have the same radius and this minimum distance is equal to the radius of one Airy disc, measured from the principal maximum to the first minimum intensity. This is called the Rayleigh criterion \citep{rayleigh1879investigations, rayleigh1880investigations}. The corresponding angle of resolution $\theta$ is given by
 \begin{equation}\label{eq:rayleigh}
@@ -46,7 +46,7 @@ where $h=\SI{6.63e-34}{\joule\second}$ is Planck's constant, $c=\SI{3.00e8}{\met
 The highest spatial resolution of an infrared microscope is defined by the diffraction limit of the radiation, see Eq.~\eqref{eq:rayleigh3}. Over the near-infrared region the wavelengths vary between \SI{750}{\nano\metre} and \SI{1.4}{\micro\metre}. Hence, if a microscope with ideal numerical aperture of 1 is used in air, where the refractive index is approximately 1, then the maximum spatial resolution will be between \SI{550}{\nano\metre} and \SI{850}{\nano\metre}.
 
 %%=========================================
-\section{Scanning Electron Microscopy}%\todo{Må skrive om denne seksjonen (og mer om).}
+\section{Scanning Electron Microscopy}
 \Acf{sem} is a technique that is used to study materials at greater magnification than with optical microscopy. A point resolution of less than \SI{1}{\nano\metre} can be achieved using the \ac{sem} \citep{goldstein2012scanning}. The \ac{sem} utilises electrons and magnetic lenses in the place of photons and optical lenses in optical microscopy. Even though the image is created in a different way than in the optical microscope, the maximum resolution is still limited by the wavelength of the particle used, which in this case is the electron. 
 
 The wavelength of an electron is given by the de Broglie relationship \citep{de1924recherches}
@@ -54,12 +54,12 @@ The wavelength of an electron is given by the de Broglie relationship \citep{de1
 \label{eq:debroglie}
 \lambda = \frac{h}{p},
 \end{equation}
-where $h=\SI{6.62607004e-34}{\metre^2\kilo\gram\second^{-1}}$ is Planck's constant and $p$ is the momentum of the electron. The momentum of the electron can be calculated using the energy-momentum relation
+where $h=\SI{6.63e-34}{\metre^2\kilo\gram\second^{-1}}$ is Planck's constant and $p$ is the momentum of the electron. The momentum of the electron can be calculated using the energy-momentum relation
 \begin{equation}
 \label{eq:energy-momentum_relation}
 E^2 = (pc)^2 + (m_0c^2)^2,
 \end{equation}
-where $E$ is the total energy of the electron, $c$ is the speed of light, and $m_0$ is the electron's rest mass. The total energy is the sum of the rest mass energy $m_0c^2$ and the kinetic energy $E_\mathrm{k}$. When an electron at rest is accelerated through a potential difference $U$, its kinetic energy  will become equal to the energy of the field $E_\textrm{k} = e U$, where $e=\SI{1.60217662e-19}{\coulomb}$ is the elementary charge. This gives that the total energy of the electron is
+where $E$ is the total energy of the electron, $c$ is the speed of light, and $m_0$ is the electron's rest mass. The total energy is the sum of the rest mass energy $m_0c^2$ and the kinetic energy $E_\mathrm{k}$. When an electron at rest is accelerated through a potential difference $U$, its kinetic energy  will become equal to the energy of the field $E_\textrm{k} = e U$, where $e=\SI{1.60e-19}{\coulomb}$ is the elementary charge. This gives that the total energy of the electron is
 \begin{equation}
 \label{eq:electron_energy}
 E = m_0c^2 + eU.
@@ -77,7 +77,7 @@ When inserting Eq.~\ref{eq:electron_momentum} into Eq.~\ref{eq:debroglie}, the d
 \lambda = \frac{h}{\sqrt{2m_0eU\brackets{1 + eU/(2m_0c^2)}}}.
 \end{equation}
 
-Eq.~\ref{eq:electron_wavelength} gives that for a \SI{1.00}{\kilo\volt} accelerating potential, the electron wavelength is \SI{3.88e-2}{\nano\metre}, while for a \SI{25.0}{\kilo\volt} accelerating potential, the electron wavelength is \SI{7.66e-3}{\nano\metre}. These small wavelengths allow the \ac{sem} to achieve high resolution images. The electromagnetic lenses, which are needed to focus the electron beam, limit $\theta_\text{cone}$ to \SI{e-2}{\radian}. Therefore, the diffraction limit, as given by Eq.~\eqref{eq:rayleigh3}, is \SI{2.37}{\nano\metre} and \SI{0.469}{\nano\metre} for accelerating voltages of \SI{1.00}{\kilo\volt} and \SI{25.0}{\kilo\volt} respectively. This is the theoretical limit, but the real obtainable resolution is lower due to spherical aberration, chromatic aberration, astigmatism, and distortion \citep{brandon2013microstructural}.
+For a \SI{1.00}{\kilo\volt} accelerating potential, the electron wavelength is \SI{3.88e-2}{\nano\metre}, while for a \SI{25.0}{\kilo\volt} accelerating potential, the electron wavelength is \SI{7.66e-3}{\nano\metre}, according to Eq.~\ref{eq:electron_wavelength}. These small wavelengths allow the \ac{sem} to achieve high resolution images. The electromagnetic lenses, which are needed to focus the electron beam, limit $\theta_\text{cone}$ to \SI{e-2}{\radian}. Therefore, the diffraction limit, as given by Eq.~\eqref{eq:rayleigh3}, is \SI{2.37}{\nano\metre} and \SI{0.469}{\nano\metre} for accelerating voltages of \SI{1.00}{\kilo\volt} and \SI{25.0}{\kilo\volt} respectively. This is the theoretical limit, but the real obtainable resolution is lower due to spherical aberration, chromatic aberration, astigmatism, and distortion \citep{brandon2013microstructural}.
 
 The \ac{sem} produces images by raster-scanning a focused beam of electrons across the sample and plotting the intensity of different signals versus beam position. During the interaction with the sample, the incoming \acp{pe} are the source to emitted \acp{se}, \acp{bse}, \acp{ae}, bremsstrahlung, and characteristic X-rays. 
 
@@ -87,21 +87,21 @@ When an electron from an inner shell is emitted and leaves a vacancy, an electro
 
 \begin{figure}[htbp]
     \centering
-    \mySubfigure{0.49\linewidth}{sem_se.png}[fig:sem_se]
+    \mySubfigure{0.48\linewidth}{sem_se.png}[fig:sem_se]
     \hfill
-    \mySubfigure{0.49\linewidth}{sem_bse.png}[fig:sem_bse]
+    \mySubfigure{0.48\linewidth}{sem_bse.png}[fig:sem_bse]
     \par\bigskip
-    \mySubfigure{0.49\linewidth}{sem_x-ray.png}[fig:sem_x-ray]
+    \mySubfigure{0.48\linewidth}{sem_x-ray.png}[fig:sem_x-ray]
     \hfill
-    \mySubfigure{0.49\linewidth}{sem_auger.png}[fig:sem_auger]
+    \mySubfigure{0.48\linewidth}{sem_auger.png}[fig:sem_auger]
     \caption[Illustration of the various modes of electron or X-ray emission from an incident electron.]{Illustration of the various modes of electron or X-ray emission from an incident \acf{pe}: \subref{fig:sem_se} \Iacf{se} is emitted when the atom is excited by the incident electron beam; \subref{fig:sem_bse} \iacf{bse} is an incident electron that scatter from the atomic nuclei and come back out of the sample; and \subref{fig:sem_x-ray} and \subref{fig:sem_auger} are the emission of an X-ray and an electron, respectively, to release excess energy after an electron from a higher energy shell falls down and fills a vacant energy level. The vacancy is formed by the emission of a secondary electron, see Fig.~\subref{fig:sem_se}. The filled black circle represents the atomic nucleus, the circle with a minus sign represents an electron, the grey circle represents a vacant energy level, and the curly orange arrow represents the emission of an X-ray \citep[Adapted from][]{goldstein2012scanning}.}
     \label{fig:sem_ill}
 \end{figure}
 
 
 %%=========================================
-\section{Energy Dispersive X-ray Spectroscopy}\label{sec:eds}%\todo{Må skrive om denne seksjonen.}
-\Acf{eds} is an technique used for the elemental analysis or chemical characterisation of a sample. Characteristic X-rays are produced during the interaction of the incident electron beam with the sample and can be detected using \ac{eds}. A characteristic X-ray is emitted when an incident electron kicks out an electron from an inner shell in an atom, and an electron from a higher-energy shell falls down to the lower-energy shell and releases the excess energy by emitting a photon. These excitations and de-excitations occur between discrete energy levels characteristic of the element. The characteristic X-rays form a spectrum that is unique for the elements involved, just like a fingerprint. Hence, \ac{eds} can be used to determine the elemental composition of the material by evaluating the characteristic energy lines. 
+\section{Energy Dispersive X-ray Spectroscopy}\label{sec:eds}
+\Acf{eds} is a technique used for the elemental analysis or chemical characterisation of a sample. Characteristic X-rays are produced during the interaction of the incident electron beam with the sample and can be detected using \ac{eds}. A characteristic X-ray is emitted when an incident electron kicks out an electron from an inner shell in an atom, and an electron from a higher-energy shell falls down to the lower-energy shell and releases the excess energy by emitting a photon. These excitations and de-excitations occur between discrete energy levels characteristic of the element. The characteristic X-rays form a spectrum that is unique for the elements involved, just like a fingerprint. Hence, \ac{eds} can be used to determine the elemental composition of the material by evaluating the characteristic energy lines. 
 
 In addition to the characteristic X-rays, bremsstrahlung is produced. This is electromagnetic radiation produced by the deceleration of a charged particle, i.e. the electron, when it is deflected by another charged particle, i.e. the atomic nucleus. The particle loses kinetic energy and the excess energy is transferred away as a photon.
 
@@ -119,7 +119,7 @@ Absolute concentration values of the elements are obtained using P/B-ZAF analysi
  %using the P/B-ZAF algorithm the characteristic X-ray intensities (i.e. the net peak areas) are calculated in relation to the mean level of the simultaneously recorded bremsstrahlung background
 
 %%=========================================
-\section{X-ray Photoelectron Spectroscopy}\label{sec:xps}%\todo{Må skrive om denne seksjonen.}
+\section{X-ray Photoelectron Spectroscopy}\label{sec:xps}
 \Acf{xps} is used to find the elemental composition of the outer surface of a solid (\SI{\sim 100}{\angstrom}). In addition, \ac{xps} can be used to get information about the chemical binding state of the detected elements.
 
 \Ac{xps} is based on the emission and detection of photoelectrons. The sample is bombarded with a beam of X-ray photons of energy $E_\text{photon}$. If $E_\text{photon}$ is sufficiently large, i.e. greater than the binding energy of an electron $E_\text{binding}$, it can kick out the electron from an inner shell in an atom. If the photoelectron is close to the surface, it can be emitted from the sample to the vacuum outside, with a kinetic energy given by
@@ -128,7 +128,7 @@ Absolute concentration values of the elements are obtained using P/B-ZAF analysi
 \end{equation}
 where $\phi$ is the work function that accounts for the loss of energy as the electron leaves the sample and is absorbed by the detector. The detector measures the kinetic energy of the emitted photoelectron. Since the electron binding energies are at discrete energy levels, and these are element and chemical-bonding state dependent, a spectrum of the number of emitted electrons as a function of binding energy reveals which elements are present in the sample and their chemical-bonding state.
 
-The mean free path of the photoelectrons in a material is on the order of \SI{20}{\angstrom} \citep{}. Hence, only electrons emitted from atoms within a few mean free paths from the surface, i.e. \SI{80}{\angstrom}, are able to escape the material without loss of energy and be detected as peaks in the spectra. This makes \ac{xps} a surface sensitive technique that can tell us about the outermost layer of the sample. The electrons that are scattered inelastically before leaving the sample form the continuous background of the spectrum.
+The mean free path of the photoelectrons in a material is on the order of \SI{20}{\angstrom} \citep{tanuma1991calculations}. Hence, only electrons emitted from atoms within a few mean free paths from the surface, i.e. \SI{80}{\angstrom}, are able to escape the material without loss of energy and be detected as peaks in the spectra. This makes \ac{xps} a surface sensitive technique that can tell us about the outermost layer of the sample. The electrons that are scattered inelastically before leaving the sample form the continuous background of the spectrum.
 
 Quantification of the composition in the sample can be made by finding the ratios of the peak areas for the elements found in the sample. The atomic fraction of element $A$ in a homogeneous solid is estimated to be \citep{moulder2000handbook}
 \begin{equation}\label{eq:xps_concentration}
@@ -137,7 +137,7 @@ Quantification of the composition in the sample can be made by finding the ratio
 where $I_\mathrm{A}$ is the measured peak area for element A, and analogously for $I_i$; and $S_\mathrm{A}$ is the sensitivity factor of element A, and analogously for $S_i$. The sensitivity factors take into account parameters that affect the intensity of the element, such as the distinctive cross-sections and densities of the different elements, and normalise these to that of the most intense peak. %the beam experience as it collide with the elements in the sample, that increase or decrease the probabilities for exciting a photoelectron.
 % where $I_\mathrm{A}/I_i$ is the measured peak area for element A/$i$ and $S_\mathrm{A}/S_i$ is the sensitivity factor of element A/$i$.
 
-A simple model for an abrupt uniform layer L on a bulk material B is used to estimate the thickness $d$ of a layer. The ratio between the signal from the layer and the signal from the bulk as a function of $d$ is given by \citet{briggs1990practical}
+A simple model for an abrupt uniform layer L on a bulk material B is used to estimate the thickness $d$ of a layer. The ratio between the signal from the layer and the signal from the bulk as a function of $d$ is given by \citep{briggs1990practical} 
 \begin{equation}\label{eq:signal_ratio}
     R(d) = \parentheses{\frac{a_\mathrm{B}}{a_\mathrm{L}}}^3 \frac{\lambda_\mathrm{LL}}{\lambda_\mathrm{BB}} \frac{1-\exp{\parentheses{-\frac{d}{\lambda_\mathrm{LL}\cos\theta}}}}{\exp{\parentheses{-\frac{d}{\lambda_\mathrm{BL}\cos\theta}}}},
 \end{equation}
@@ -168,7 +168,7 @@ where $a_\mathrm{B}$ is the atomic size of material B, and analogously for $a_\m
 \begin{equation}
 F = -k\Delta x
 \end{equation}
-where the force is directly proportional with the cantilever spring constant $k$ and the cantilever deflection $\Delta x$. The forces due to electrostatic repulsion dominate when the tip is close to the surface and cause the cantilever to deflect away from the surface, while the attractive van der Waals forces between the surface and the tip dominate when the tip is further away and cause the cantilever to deflect towards the surface.
+where the force $F$ is directly proportional with the cantilever spring constant $k$ and the cantilever deflection $\Delta x$. The forces due to electrostatic repulsion dominate when the tip is close to the surface and cause the cantilever to deflect away from the surface, while the attractive van der Waals forces between the surface and the tip dominate when the tip is further away and cause the cantilever to deflect towards the surface.
 
 Cantilever deflections towards or away from the surface are monitored with laser light from a solid-state diode that is focused on the back of the cantilever and reflected onto a \ac{pspd}, as seen in Fig.~\ref{fig:afm_laser}. As the tip scans the sample, the raised and lowered features on the sample surface cause the cantilever to deflect, which in turn change the direction of the reflected laser beam that is detected by the \ac{pspd}. The resulting image is a topographic map of the sample surface features. The lateral resolution of the images is around \SI{30}{\nano\metre} while the vertical resolution can be up to \SI{0.1}{\nano\metre} \citep{birdi2003scanning}.
 
@@ -208,7 +208,7 @@ where $N$ is the number of data points in the image, $z_i$ is the height at poin
 
 %%=========================================
 \section{Fourier Transform Infrared Spectroscopy}\label{sec:ftir}
-\Acf{ftir} is a technique that is used to obtain an \ac{ir} transmission spectrum of a material. The spectrum indicates how much light is transmitted through the sample at each wavelength. Patterns in the spectrum can help identify impurities and contaminants in the sample, since molecules exhibit specific \ac{ir} transmission fingerprints \citep{smith2011fourier}.
+\Acf{ftir} is a technique that is used to obtain an \ac{ir} transmission spectrum of a material. The spectrum indicates how much light that is transmitted through the sample at each wavelength. Patterns in the spectrum can help identify impurities and contaminants in the sample, since molecules exhibit specific \ac{ir} transmission fingerprints \citep{smith2011fourier}.
 
 The transmittance spectrum, the percentage of incoming light that is transmitted through the sample as a function of wavenumber, is found by calculating the ratio of the sample spectrum and the background spectrum. The background spectrum is usually acquired immediately before the sample is placed in the sample compartment to get as identical conditions as possible.
 
@@ -228,9 +228,9 @@ As the mirror moves continuously from an \ac{opd} of zero to a distance further 
 %
 %The resolution of the spectrum is set by the range of the mirror
 %
-%The band gap of a material can be identified where the transmission increases steeply with wavelength. This increase in transmission happens because photons with energy greater than the band gap can be absorbed by creating an electron-hole pair, while photons with energy less than the band gap cannot create an electron-hole pair and are transmitted.
-%
-The thickness of a thin film on top of another material can be calculated from the \ac{ftir} spectrum. Both the surface of the film and the boundary between the film and the underlying material reflect the incoming beam of photons. Resulting in a fringing effect, which originate from constructive and destructive interference of the light, where the maxima are found at optical path difference equals an even number of wavelengths. Hence, the fringes in the spectrum can be used to determine the thickness of the film
+The band gap of a material can be determined from the \ac{ftir} spectrum as the wavelength where the transmission increases steeply with increasing wavelength. The increase in transmission occurs because the photons with energy greater than the band gap can be absorbed by the creation of an electron-hole pair, while photons with energy less than the band gap cannot and are transmitted.
+
+The thickness of a thin layer on top of another material can be calculated from the \ac{ftir} spectrum. Both the surface of the layer and the boundary between the layer and the underlying material reflect the incoming beam of photons. This difference in optical path length cause constructive and destructive interference of the light, which manifests as a fringing effect in the \ac{ftir} spectrum. The maxima are found where the optical path difference equals an even number of wavelengths. Hence, the fringes in the spectrum can be used to determine the thickness of the film
 \begin{equation}
 \label{eq:ftir_thickness}
 d = \frac{1}{2}\frac{1}{n\Delta k},
