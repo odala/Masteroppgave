@@ -9,7 +9,7 @@ In order to describe the physical and chemical properties of a material, it is i
 %%=========================================
 \section{Optical Microscopy}
 
-The optical microscope uses visible light and optical lenses to magnify images of small features. There are different illumination techniques that can be used to increase the contrast from the sample. One of these techniques is bright field microscopy, where the scattered beam is excluded from the image and the contrast in the image comes from the absorption of light in the sample. A complementary technique is dark field microscopy, in which the unscattered beam is excluded and it is the scattered light that forms the image. A third optical microscopy technique used to enhance the contrast, is Nomarski microscopy, which utilises the optical path length of the sample to see otherwise invisible features.
+The optical microscope uses visible light and optical lenses to magnify images of small features. There are different illumination techniques that can be used to increase the contrast from the sample. One of these techniques is bright field microscopy, where the scattered beam is excluded from the image and the contrast in the image comes from the absorption of light in the sample. A complementary technique is dark field microscopy, in which the unscattered beam is excluded and it is the scattered light that forms the image. A third optical microscopy technique used to enhance the contrast is Nomarski microscopy, which utilises the optical path length of the sample to see otherwise invisible features.
 
 Even if all optical aberrations in the lens system are assumed to be negligible, i.e. a perfect lens, there will be a limit to how small details that can be resolved due to interference and diffraction of the light that passes through the system. Resolution is defined as the minimum distance between two points at which they can be distinguished. For two point sources surrounded by Airy discs of diffracted light, this minimum distance is at which the principal maximum of one source coincides with the first minimum of the second source. If the sources have equal wavelength, then the Airy discs have the same radius and this minimum distance is equal to the radius of one Airy disc, measured from the principal maximum to the first minimum intensity. This is called the Rayleigh criterion \citep{rayleigh1879investigations, rayleigh1880investigations}. The corresponding angle of resolution $\theta$ is given by
 \begin{equation}\label{eq:rayleigh}
@@ -31,7 +31,7 @@ Inserting Eq.~\eqref{eq:numap} into Eq.~\eqref{eq:rayleigh2} gives
 d = \SI{0.61}{}\frac{n\lambda}{\text{NA}}.
 \end{equation}
 
-Eq.~\eqref{eq:rayleigh3} shows that there is a linear relation between resolution and the wavelength of the incoming light. If the wavelength is reduced, it becomes possible to resolve smaller details. For an optical microscope $\text{NA}$ is approximately 1 and the refractive index in air is approximately 1. Then, for visible light, i.e. wavelengths in the range \SI{400}{\nano\metre} to \SI{680}{\nano\metre}, it would be possible to achieve a resolution of \SI{244}{\nano\metre} to \SI{415}{\nano\metre} with an optical microscope. Since the spatial resolution is proportional to $\lambda$, blue light can be focused to a smaller spot than red light due to its shorter wavelength.
+Eq.~\eqref{eq:rayleigh3} shows that there is a linear relation between resolution and the wavelength of the incoming light. If the wavelength is reduced, it becomes possible to resolve smaller details. For an optical microscope, $\text{NA}$ is approximately 1 and the refractive index in air is approximately 1. Then, for visible light, i.e. wavelengths in the range \SI{400}{\nano\metre} to \SI{680}{\nano\metre}, it would be possible to achieve a resolution of \SI{244}{\nano\metre} to \SI{415}{\nano\metre} with an optical microscope. Since the spatial resolution is proportional to $\lambda$, blue light can be focused to a smaller spot than red light due to its shorter wavelength.
 %%=========================================
 \section{Near-Infrared Transmission Microscopy}
 %
@@ -43,7 +43,7 @@ L_\lambda (T) = \frac{2c}{\lambda^4}\parentheses{\mathrm{e}^{\frac{hc}{kT\lambda
 \end{equation}
 where $h=\SI{6.63e-34}{\joule\second}$ is Planck's constant, $c=\SI{3.00e8}{\metre\second^{-1}}$ is the speed of light and $k=\SI{1.38e-23}{\joule\kelvin^{-1}}$ is Boltzmann's constant.
 
-The highest spatial resolution of an infrared microscope is defined by the diffraction limit of the radiation, see Eq.~\eqref{eq:rayleigh3}. Over the near-infrared region the wavelengths vary between \SI{750}{\nano\metre} and \SI{1.4}{\micro\metre}. Hence, if a microscope with ideal numerical aperture of 1 is used in air, where the refractive index is approximately 1, then the maximum spatial resolution will be between \SI{550}{\nano\metre} and \SI{850}{\nano\metre}.
+The highest spatial resolution of an infrared microscope is defined by the diffraction limit of the radiation, see Eq.~\eqref{eq:rayleigh3}. Over the near-infrared region the wavelengths vary between \SI{750}{\nano\metre} and \SI{1.4}{\micro\metre}. Hence, if a microscope with an ideal numerical aperture of 1 is used in air, where the refractive index is approximately 1, then the maximum spatial resolution will be between \SI{550}{\nano\metre} and \SI{850}{\nano\metre}.
 
 %%=========================================
 \section{Scanning Electron Microscopy}
@@ -59,7 +59,7 @@ where $h=\SI{6.63e-34}{\metre^2\kilo\gram\second^{-1}}$ is Planck's constant and
 \label{eq:energy-momentum_relation}
 E^2 = (pc)^2 + (m_0c^2)^2,
 \end{equation}
-where $E$ is the total energy of the electron, $c$ is the speed of light, and $m_0$ is the electron's rest mass. The total energy is the sum of the rest mass energy $m_0c^2$ and the kinetic energy $E_\mathrm{k}$. When an electron at rest is accelerated through a potential difference $U$, its kinetic energy  will become equal to the energy of the field $E_\textrm{k} = e U$, where $e=\SI{1.60e-19}{\coulomb}$ is the elementary charge. This gives that the total energy of the electron is
+where $E$ is the total energy of the electron, $c$ is the speed of light, and $m_0$ is the electron's rest mass. The total energy is the sum of the rest mass energy $m_0c^2$ and the kinetic energy $E_\mathrm{k}$. When an electron at rest is accelerated through a potential difference $U$, its kinetic energy will become equal to the energy of the field $E_\textrm{k} = e U$, where $e=\SI{1.60e-19}{\coulomb}$ is the elementary charge. This gives that the total energy of the electron is
 \begin{equation}
 \label{eq:electron_energy}
 E = m_0c^2 + eU.
@@ -103,7 +103,7 @@ When an electron from an inner shell is emitted and leaves a vacancy, an electro
 \section{Energy Dispersive X-ray Spectroscopy}\label{sec:eds}
 \Acf{eds} is a technique used for the elemental analysis or chemical characterisation of a sample. Characteristic X-rays are produced during the interaction of the incident electron beam with the sample and can be detected using \ac{eds}. A characteristic X-ray is emitted when an incident electron kicks out an electron from an inner shell in an atom, and an electron from a higher-energy shell falls down to the lower-energy shell and releases the excess energy by emitting a photon. These excitations and de-excitations occur between discrete energy levels characteristic of the element. The characteristic X-rays form a spectrum that is unique for the elements involved, just like a fingerprint. Hence, \ac{eds} can be used to determine the elemental composition of the material by evaluating the characteristic energy lines. 
 
-In addition to the characteristic X-rays, bremsstrahlung is produced. This is electromagnetic radiation produced by the deceleration of a charged particle, i.e. the electron, when it is deflected by another charged particle, i.e. the atomic nucleus. The particle loses kinetic energy and the excess energy is transferred away as a photon.
+In addition to the characteristic X-rays, bremsstrahlung is produced. This is electromagnetic radiation produced by the deceleration of a charged particle when it is deflected by another charged particle, i.e. when the electron is deflected by the atomic nucleus. The particle loses kinetic energy and the excess energy is transferred away as a photon.
 
 A summary of the interaction volumes of the various modes of electron or X-ray emission from an incident electron can be seen in Fig.~\ref{fig:sem_interaction_volume}. The interaction volume increases with increasing electron energy, i.e. increasing accelerating voltage, and decreases with increasing average atomic number of the sample \citep{goldstein2012scanning}. Therefore, it is necessary to work at as low an accelerating voltage as possible taking into account what elements are present and which X-ray lines are needed.%Therefore, it is necessary to use low accelerating voltages when obtaining \ac{sem} images, i.e. \SIrange{0.5}{5}{\kilo\volt}, to prevent a large interaction volume and get generation of secondary electrons from the feature of interest \citep{}.
 
@@ -114,7 +114,7 @@ A summary of the interaction volumes of the various modes of electron or X-ray e
     \label{fig:sem_interaction_volume}
 \end{figure}
 
-Absolute concentration values of the elements are obtained using P/B-ZAF analysis. The local peak to bremsstrahlung background ratios (P/B) are input to a modified ZAF matrix correction, which relate the recorded spectrum to the primary rate of X-ray generation. This is done mainly based on analytical expressions to correct for atomic number depended X-ray yield (Z), self-absorption (A), and secondary fluorescence enhancement (F) \citep{quantax2008microanalysis}. Since P/B-ZAF do not use explicit or implicit standards in the calculation of concentrations, it is called a true standardless method.%, and self-calibrating.
+Absolute concentration values of the elements are obtained using P/B-ZAF analysis. The peak-to-local-bremsstrahlung-background ratios (P/B) are input to a modified ZAF matrix correction, which relates the recorded spectrum to the primary rate of X-ray generation. This is done mainly based on analytical expressions to correct for atomic number depended X-ray yield (Z), self-absorption (A), and secondary fluorescence enhancement (F) \citep{quantax2008microanalysis}. Since P/B-ZAF do not use explicit or implicit standards in the calculation of concentrations, it is called a true standardless method.%, and self-calibrating.
 
  %using the P/B-ZAF algorithm the characteristic X-ray intensities (i.e. the net peak areas) are calculated in relation to the mean level of the simultaneously recorded bremsstrahlung background
 
@@ -164,11 +164,11 @@ where $a_\mathrm{B}$ is the atomic size of material B, and analogously for $a_\m
 
 %%=========================================
 \section{Atomic Force Microscopy}\label{sec:afm}
-\Acf{afm} is used to obtain high resolution topographic images of a sample surface. While \ac{sem} provides two-dimensional images without information about depth or height of the defects, \ac{afm} can provide three-dimensional topographical images of the defects with the highest vertical resolution among all techniques \citep{smith2013industrial}. The \ac{afm} is a type of \ac{spm} that measures the surface topography by raster scanning a cantilever with a sharp tip over the sample surface. As the tip approaches the sample surface, forces between the tip and the surface lead to a deflection of the cantilever according to Hooke's law \citep{bhushan1998handbook}
+\Acf{afm} is used to obtain high-resolution topographic images of a sample surface. While \ac{sem} provides two-dimensional images without information about depth or height of the defects, \ac{afm} can provide three-dimensional topographical images of the defects with the highest vertical resolution among all techniques \citep{smith2013industrial}. The \ac{afm} is a type of \ac{spm} that measures the surface topography by raster scanning a cantilever with a sharp tip over the sample surface. As the tip approaches the sample surface, forces between the tip and the surface lead to a deflection of the cantilever according to Hooke's law \citep{bhushan1998handbook}
 \begin{equation}
 F = -k\Delta x
 \end{equation}
-where the force $F$ is directly proportional with the cantilever spring constant $k$ and the cantilever deflection $\Delta x$. The forces due to electrostatic repulsion dominate when the tip is close to the surface and cause the cantilever to deflect away from the surface, while the attractive van der Waals forces between the surface and the tip dominate when the tip is further away and cause the cantilever to deflect towards the surface.
+where the force $F$ is directly proportional to the cantilever spring constant $k$ and the cantilever deflection $\Delta x$. The forces due to electrostatic repulsion dominate when the tip is close to the surface and cause the cantilever to deflect away from the surface, while the attractive van der Waals forces between the surface and the tip dominate when the tip is further away and cause the cantilever to deflect towards the surface.
 
 Cantilever deflections towards or away from the surface are monitored with laser light from a solid-state diode that is focused on the back of the cantilever and reflected onto a \ac{pspd}, as seen in Fig.~\ref{fig:afm_laser}. As the tip scans the sample, the raised and lowered features on the sample surface cause the cantilever to deflect, which in turn change the direction of the reflected laser beam that is detected by the \ac{pspd}. The resulting image is a topographic map of the sample surface features. The lateral resolution of the images is around \SI{30}{\nano\metre} while the vertical resolution can be up to \SI{0.1}{\nano\metre} \citep{birdi2003scanning}.
 
@@ -178,7 +178,7 @@ Cantilever deflections towards or away from the surface are monitored with laser
 
 %The cantilever deflection is monitored with a laser beam which is focused on the cantilver and the light is reflected on a detector. If the cantilever bends the position of then the laser beam changes.
 
-There are three basic \ac{afm} imaging modes: contact mode, non-contact mode, and tapping mode. Contact mode is, as the name implies, a technique where the tip is in contact with the surface during the scan. In the case of non-contact mode the tip is vibrating, with a constant frequency near the resonant frequency of the tip, above the surface. In tapping mode the tip is closer to the surface and vibrates with a higher amplitude than in non-contact mode. In the lowest point of the trajectory the tip is briefly touching the surface.
+There are three basic \ac{afm} imaging modes: contact mode, non-contact mode, and tapping mode. Contact mode is, as the name implies, a technique where the tip is in contact with the surface during the scan. In the case of non-contact mode the tip is vibrating, with a constant frequency near the resonant frequency of the tip, above the surface. In tapping mode the tip is closer to the surface and vibrates with a higher amplitude than in non-contact mode. In the lowest point of the trajectory, the tip is briefly touching the surface.
 
 \begin{figure}[htbp]
     \centering
@@ -187,14 +187,14 @@ There are three basic \ac{afm} imaging modes: contact mode, non-contact mode, an
     \label{fig:afm_laser}
 \end{figure}
 
-An \ac{afm} image is a convolution between the tip and the sample which is to be visualised. Therefore, the tip radius limits the lateral resolution, and cause an image artifact which is observable when using a tip with a similar or higher radius of curvature with respect to the feature. Holes can appear both narrower and less deep, and protruding features can appear wider than they really are, see Fig.~\ref{fig:afm_tip-convolution}. For the technique to provide information of the surface at the atomic level, the tip must be sharp, ideally terminating in just a single atom on the tip. Any changes to the tip that cause it to become broader, will decrease the lateral resolution of the image. These changes might be caused by contaminants on the tip or wearing of the tip due to collisions with the sample by either scanning too fast or having a rough surface \citep{birdi2003scanning}.
+An \ac{afm} image is a convolution between the tip and the sample which is to be visualised. Therefore, the tip radius limits the lateral resolution, and cause an image artefact which is observable when using a tip with a similar or higher radius of curvature with respect to the feature. Holes can appear both narrower and less deep, and protruding features can appear wider than they really are, see Fig.~\ref{fig:afm_tip-convolution}. For the technique to provide information of the surface at the atomic level, the tip must be sharp, ideally terminating in just a single atom on the tip. Any changes to the tip that cause it to become broader, will decrease the lateral resolution of the image. These changes might be caused by contaminants on the tip or wearing of the tip due to collisions with the sample by either scanning too fast or having a rough surface \citep{birdi2003scanning}.
 
 \begin{figure}[htbp]
     \centering
     \mySubfigure{0.49\linewidth}{afm_artifact_small-tip.png}[fig:afm_artifact_small]
     \hfill
     \mySubfigure{0.49\linewidth}{afm_artifact_big-tip.png}[fig:afm_artifact_large]
-    \caption[Illustration of the convolution effect in an \ac{afm} image due to tip size.]{Illustration of an \ac{afm} image artifact that is caused by the convolution effect between the tip and the feature which is to be visualised, i.e. a broadening effect. This image artifact is observable when using a tip with \subref{fig:afm_artifact_small} a similar or \subref{fig:afm_artifact_large} higher radius of curvature with respect to the feature being imaged. In the images, grey represents the probe tip, black represents the real surface and surface features, and red represents the displayed surface \citep[Adapted from][]{psia2002xe100}.}
+    \caption[Illustration of the convolution effect in an \ac{afm} image due to tip size.]{Illustration of an \ac{afm} image artefact that is caused by the convolution effect between the tip and the feature which is to be visualised, i.e. a broadening effect. This image artefact is observable when using a tip with \subref{fig:afm_artifact_small} a similar or \subref{fig:afm_artifact_large} higher radius of curvature with respect to the feature being imaged. In the images, grey represents the probe tip, black represents the real surface and surface features, and red represents the displayed surface \citep[Adapted from][]{psia2002xe100}.}
     \label{fig:afm_tip-convolution}
 \end{figure}
 
@@ -208,7 +208,7 @@ where $N$ is the number of data points in the image, $z_i$ is the height at poin
 
 %%=========================================
 \section{Fourier Transform Infrared Spectroscopy}\label{sec:ftir}
-\Acf{ftir} is a technique that is used to obtain an \ac{ir} transmission spectrum of a material. The spectrum indicates how much light that is transmitted through the sample at each wavelength. Patterns in the spectrum can help identify impurities and contaminants in the sample, since molecules exhibit specific \ac{ir} transmission fingerprints \citep{smith2011fourier}.
+\Acf{ftir} is a technique that is used to obtain an \ac{ir} transmission spectrum of a material. The spectrum indicates how much light that is transmitted through the sample at each wavelength. Patterns in the spectrum can help identify impurities and contaminants in the sample since molecules exhibit specific \ac{ir} transmission fingerprints \citep{smith2011fourier}.
 
 The transmittance spectrum, the percentage of incoming light that is transmitted through the sample as a function of wavenumber, is found by calculating the ratio of the sample spectrum and the background spectrum. The background spectrum is usually acquired immediately before the sample is placed in the sample compartment to get as identical conditions as possible.
 
@@ -230,7 +230,7 @@ As the mirror moves continuously from an \ac{opd} of zero to a distance further 
 %
 The band gap of a material can be determined from the \ac{ftir} spectrum as the wavelength where the transmission increases steeply with increasing wavelength. The increase in transmission occurs because the photons with energy greater than the band gap can be absorbed by the creation of an electron-hole pair, while photons with energy less than the band gap cannot and are transmitted.
 
-The thickness of a thin layer on top of another material can be calculated from the \ac{ftir} spectrum. Both the surface of the layer and the boundary between the layer and the underlying material reflect the incoming beam of photons. This difference in optical path length cause constructive and destructive interference of the light, which manifests as a fringing effect in the \ac{ftir} spectrum. The maxima are found where the optical path difference equals an even number of wavelengths. Hence, the fringes in the spectrum can be used to determine the thickness of the film
+The thickness of a thin layer on top of another material can be calculated from the \ac{ftir} spectrum. Both the surface of the layer and the boundary between the layer and the underlying material reflect the incoming beam of photons. This difference in optical path length causes constructive and destructive interference of the light, which manifests as a fringing effect in the \ac{ftir} spectrum. The maxima are found where the optical path difference equals an even number of wavelengths. Hence, the fringes in the spectrum can be used to determine the thickness of the film
 \begin{equation}
 \label{eq:ftir_thickness}
 d = \frac{1}{2}\frac{1}{n\Delta k},
