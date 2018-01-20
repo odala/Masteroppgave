@@ -1,0 +1,37 @@
+Modi i SEM
+Høy oppløsning: 2kV, (1.80 kV), WD=6(7)mm, Small:HR, CL1: 15-20(10), AA: 4, OA: 3.
+BSE: --"--
+EDS: 15 kV (deretter 5 for å ikke drukne i Si topp og dobbeltopp), WD=10mm
+
+200 nm partikkel: -15.135, -5,983 200k akkurat utenfor kant
+xx: -15,096, 7,347 150k
+
+UNDERVEISNOTATER
+
+- Composition of as-received substrates at the corner, sides and centre. Comparison.
+- Classification of the observed defects. 
+	- Key features, size, geometric form, height, composition, typical or rare.
+	- Graphical representation of density of defects (contour plot or volume plot as in Benson et. al.). Count from grid pictures (M=500).
+- Oxide layer on BZ1503 ID7.1 from XPS spectra.
+- Other possible charachterization techniques:
+	- AFM
+	- FTIR
+	- Near-IR
+- Discussion about surface treatments of the different substrates. Har Randi noe data paa det?
+
+Substratene
+	- C-3895-23 TUNING
+	- ACROTEC
+	  Lot No. BZ1503
+	  Wafer No. ID7.1
+	  Wafer Size 30x30
+	  Orientation (111)B
+	JX Nippon Mining & Metals Corporation
+
+Interactive element identification and background calculation, quantification with P/B-ZAF.
+Correction of detector effects (escape, tail, shelf, shift, pileup)
+Element identification
+Bremsstrahlung background
+Overlapped lines deconvolution
+Quantification (colon) P/B-ZAF
+Results

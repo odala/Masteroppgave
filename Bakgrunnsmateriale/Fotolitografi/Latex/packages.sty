@@ -1,0 +1,182 @@
+%########################### Packages ###################################
+
+% ===== Skrifttype ============ 
+\usepackage[english]{babel}                         % Tilpasning til engelsk
+\usepackage[T1]{fontenc}                            % Vise norske tegn.
+\usepackage[utf8]{inputenc}         		        % Velger tegnsettet i dette dokumentet
+\usepackage{ifthen}                                 % for bruk av den nye kommandoen \note{}
+\usepackage{color}  
+\usepackage{soulutf8}                               % for higlighting with \hl{}
+
+% ===== Grafikk ===============
+\usepackage{graphicx}       						% For å inkludere figurer.
+\usepackage{float}                                  % For å få figurer ved siden av hverandre
+\usepackage{caption}
+\usepackage{subfigure}                             % Needed to include subfigures with the command \begin{figure}[ht];\subfigure[<caption>]{\includegraphics...
+%\usepackage{subcaption}                            % For å kunne lage subfigs
+
+% ===== Matte =================
+\usepackage{amsmath,amssymb} 						% Ekstra matematikkfunksjoner.
+\usepackage{bm}
+%\usepackage[LGRgreek]{mathastext}                  % setter mattemodus til ikke-kursiv
+\usepackage{mathtools}
+\usepackage{siunitx}							    % Må inkluderes for blant annet å få tilgang til kommandoen \SI{3.25(2)}{\kilo\gram} (korrekte måltall med enheter)
+    \sisetup{separate-uncertainty}                  %
+    \sisetup{exponent-product = \cdot}              % Prikk som multiplikasjonstegn (i steden for kryss).
+    \sisetup{output-product = \cdot} 
+ 	\sisetup{output-decimal-marker  =  {.}}         % Komma som desimalskilletegn (i steden for punktum).
+
+% ===== Tabeller og figurer ===
+\usepackage{booktabs}                               % For å få tilgang til finere linjer (til bruk i tabeller og slikt).
+\usepackage[font=small,labelfont=bf]{caption}	    % For justering av figurtekst og tabelltekst.
+\usepackage{float}                                  % Gjør at figurer plasseres akkurat DER de skal ved hjelp av [H] i \begin{figure}[...]
+%% Kommandoene under gjør det enklere for LaTeX å plassere figurer der du ønsker
+    \setcounter{totalnumber}{5}
+    \renewcommand{\textfraction}{0.05}
+    \renewcommand{\topfraction}{0.95}
+    \renewcommand{\bottomfraction}{0.95}
+    \renewcommand{\floatpagefraction}{0.35}
+    \setlength\parindent{0pt}
+%\usepackage[section]{placeins}                      % puts a \FloatBarrier at every new section, prevent floats from being moved over it
+%\usepackage{flafter}                                % ensure that the float never appears before its position in the LaTeX source code.
+    
+% ===== Sideoppsett ===========
+\usepackage{setspace}                               
+    \onehalfspacing                                 % gir 1.5 linjeavstand
+\setlength{\marginparwidth}{0pt}
+\usepackage{parskip}
+
+% ===== Referanser ============
+\usepackage{natbib}
+%\usepackage[numbers]{natbib}                       % Use this command if you want to refer to the literature by numbers, e.g., [1]
+
+% ===== Hopp til link ========= 
+\usepackage[colorlinks=true, a4paper=true, pdfstartview=FitV, linkcolor=black, citecolor=black, urlcolor=black]{hyperref} %pdfborder=000,pdftex=true
+%\pdfcompresslevel=9
+\usepackage{url}
+
+% ===== Lister ================ 
+%\usepackage{enumitem}
+
+% ===== Figursti ===============
+%\graphicspath{{Eksempler/}, {0MatematiskeVerktoy/fig/}, {1Elektrostatikk/fig/}, {2Magnetostatikk/fig/}, {3Elektrodynamikk/fig/}}
+%\def\input@path{{Eksempler/}, {0MatematiskeVerktoy/fig/}, {1Elektrostatikk/fig/}, {2Magnetostatikk/fig/}, {3Elektrodynamikk/fig/}}
+
+% ===== Innholdsfortegnelse ===
+%\setcounter{tocdepth}{2}                            % Setter hvor mange nivåer tableofcontenst skal ta med, her: 2, så vi får med section og subsection, men ikke subsubsection
+%\usepackage[titletoc]{appendix}
+
+% ===== Indeks ================
+%\usepackage{makeidx}
+%\makeindex
+
+% ===== Header ================
+%\usepackage{fancyhdr}
+%    \setlength{\headheight}{15.2pt}
+%\pagestyle{fancy}
+
+% ===== Bokser rundt tekst =====
+%\usepackage{framed, color}
+%\definecolor{shadecolor}{rgb}{1,0.8,0.3}    %\begin{shaded} This is some text. \end{shaded}
+%use framed, snugshade (smalere shaded) or leftbar instead of shaded.
+
+% ===== Graphics path ==========
+\graphicspath{{fig/}}
+    \def\input@path{{fig/}}
+
+
+% Redefine footer to get rid of watermark
+\makeatletter
+\def\ps@pprintTitle{
+    \let\@oddhead\@empty
+	\let\@evenhead\@empty
+	\def\@oddfoot{ % Want page number and date on first page footer
+		\parbox[t]{.322\textwidth}{\raggedright{\hfill }}
+		\parbox[t]{.333\textwidth}{\centering \thepage}      % Page number
+		\parbox[t]{.333\textwidth}{\raggedleft\textit\today} % Date
+	}
+	\let\@evenfoot\@oddfoot
+}
+\makeatother
+
+%%===== Python ================
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+
+\lstset{literate=%
+{æ}{{\ae}}1
+{å}{{\aa}}1
+{ø}{{\o}}1
+{Æ}{{\AE}}1
+{Å}{{\AA}}1
+{Ø}{{\O}}1
+}
+\lstset{extendedchars=\true}
+\lstset{inputencoding=ansinew}
+
+
+\lstset{
+    language=python,
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\color{blue}\bfseries,
+    stringstyle=\color{red!50!black},
+    commentstyle=\color{mygreen}\itshape,
+    numbers=none,
+    captionpos=t,
+    escapeinside={\%*}{*)}
+}
+
+%%===================================
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+%\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{
+    \lstset{
+        language=Python,
+        basicstyle=\ttfamily\normalsize,
+        otherkeywords={self},             % Add keywords here
+        keywordstyle=\ttfamily\color{deepblue},
+        emph={MyClass,__init__},          % Custom highlighting
+        emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+        stringstyle=\ttfamily\color{deepgreen},
+        frame=tb,                         % Any extra options here
+        showtabs=false,
+        showspaces=false,
+        showstringspaces=false            % 
+    }
+}
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}

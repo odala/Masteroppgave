@@ -1,0 +1,74 @@
+While contact mode detects the bending of
+a cantilever, the non-contact mode vibrates a cantilever at a high resonant frequency,
+and measures the force gradient by the amplitude and phase change due to the
+interaction between the probe and the sample, which yields the topography of the
+sample.
+
+PRINCIPLES OF NON-CONTACT MODE IN AFM
+There are two major forces, the static electric repulsive force and attractive force,
+existing between atoms a short distance apart: The static electric repulsive forces (Fion)
+between ion cores and the static electric attractive forces (Fel) between valence electrons
+and ion cores. When the distance between the atoms at the end of the probe tip and the
+atoms on the sample surface becomes much shorter, the repulsive forces between them
+become dominant, and the force change due to the distance change becomes greater and
+greater. Therefore, contact AFM measures surface topography by utilizing the system’s
+sensitive response to the Repulsive Coulomb Interactions that exist between the ion cores
+when the distance between the probe tip and the sample surface atoms is very small.
+However, as shown in Figure 8-1, when the distance between the probe tip and the
+sample atoms is relatively large, the attractive force Fel becomes dominant. Ion cores
+become electric dipoles due to the valence electrons in the other atoms, and the force
+induced by the dipole-dipole interaction is the van der Waals Force. Non-contact AFM
+(NC-AFM) measures surface topography by utilizing this attractive atomic force in the
+relatively larger distance between the tip and a sample surface.
+
+Se figur 8.1: Concept diagram of Contact mode and Non-Contact mode in AFM.
+
+Figure 8-1 compares the movement of the probe tip relative to the sample surface
+for images being acquired between in contact AFM and in non-contact AFM. Contact
+AFM uses the “physical contact” between the probe tip and the sample surface, whereas
+non-contact AFM does not require this contact with the sample. In Non-Contact mode,
+the force between the tip and the sample is very weak so that there is no unexpected
+change in the sample during the measurement. Therefore, Non-Contact AFM is very
+useful when a biological sample or other very soft sample is being measured; the tip will
+also have an extended lifetime because it is not abraded during the scanning process.
+On the other hand, the force between the tip and the sample in the non-contact regime is
+very low, and it is not possible to measure the deflection of the cantilever directly. So,
+Non-Contact AFM detects the changes in the phase or the vibration amplitude of the
+cantilever that are induced by the attractive force between the probe tip and the sample
+while the cantilever is mechanically oscillated near its resonant frequency.
+
+A cantilever used in Non-Contact AFM typically has a resonant frequency between
+100 kHz and 400 kHz with vibration amplitude of a few nanometers. Because of the
+attractive force between the probe tip and the surface atoms, the cantilever vibration at its resonant frequency near the sample surface experiences a shift in spring constant from its
+intrinsic spring constant ( ko ). This is called the effective spring constant (keff), and the
+following equation holds:
+\[k_\mathrm{eff} = k_o - F^'.\]
+
+When the attractive force is applied, keff becomes smaller than k0 since the force
+gradient F’ (=?F/?) is positive. Accordingly, the stronger the interaction between the
+surface and the tip (in other words, the closer the tip is brought to the surface), the smaller
+the effective spring constant becomes. This alternating current method (AC detection)
+makes more sensitive responds to the force gradient as opposed to the force itself. Thus,
+it is also applied in such techniques as MFM (Magnetic Force Microscopy) and DFM
+(Dynamic Force Microscopy).
+
+A bimorph is used to mechanically vibrate the cantilever. When the bimorph’s
+drive frequency reaches the vicinity of the cantilever’s natural/intrinsic vibration frequency
+(f0), resonance will take place, and the vibration that is transferred to the cantilever
+becomes very large. This intrinsic frequency can be detected by measuring and
+recording the amplitude of the cantilever vibration while scanning the drive frequency of
+the voltage being applied to the bimorph. Figure 9-2 displays the relationship between
+the cantilever’s amplitude and the vibration frequency. From this output, we can
+determine the cantilever’s intrinsic frequency.
+
+On the other hand, the spring constant affects the resonant frequency (f0) of the
+cantilever, and the relation between the spring constant (k0) in free space and the resonant frequency (f0) is as in Equation (2).
+\[f_0 = \sqrt{\frac{k_0}{m}}.\]
+
+As in Equation (1), since keff becomes smaller than k0 due to the attractive force,
+feff too becomes smaller than f0 as shown in Figure 8-3 (a). If you vibrate the cantilever at
+the frequency f1 (a little larger than f0) where a steep slope is observed in the graph
+representing free space frequency vs. amplitude, the amplitude change (?A) at f1 becomes
+very large even with a small change of intrinsic frequency caused by atomic attractions.
+Therefore, the amplitude change measured in f1 reflects the distance change (?d) between
+the probe tip and the surface atoms.

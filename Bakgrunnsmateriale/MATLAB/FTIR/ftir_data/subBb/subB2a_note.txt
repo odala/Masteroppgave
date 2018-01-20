@@ -1,0 +1,4 @@
+FTIR measurements taken as-received, before polish and etch.
+
+Data was copied from:
+G:\LPE\Substrater\FTIR

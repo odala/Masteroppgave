@@ -1,0 +1,13 @@
+# To compile the master thesis:
+xelatex main.tex
+bibtex main
+xelatex main.tex
+xelatex main.tex
+
+# Suppose you have main.tex (and main.bib, I have references.bib. Work as well)
+# You need to run:
+
+xelatex main.tex (generate a document with question marks in place of unknown references)
+bibtex main      (parse all the .bib files that were included in the article and generate metainformation regarding references)
+xelatex main.tex (generate document with all the references in the correct places)
+xelatex main.tex (just in case if adding references broke page numbering somewhere)
